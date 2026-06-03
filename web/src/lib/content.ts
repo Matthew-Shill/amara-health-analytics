@@ -17,7 +17,7 @@ export const PROBLEMS = [
   {
     title: "Inventory Waste",
     description:
-      "Products may be tracked by vial, package, or syringe—but real usage often happens by unit, dose, or treatment.",
+      "Products may be tracked by vial, package, or syringe, but real usage often happens by unit, dose, or treatment.",
   },
   {
     title: "Manual Reporting",
@@ -208,7 +208,7 @@ export const INVENTORY_DEMO = {
     { label: "Estimated Revenue Impact", value: "-$2,700", highlight: true },
   ],
   supportingText:
-    "Instead of only tracking vials, syringes, or packages, Amara can help clinics understand product usage at the unit, dose, or treatment level—revealing waste, leakage, and reorder timing opportunities.",
+    "Instead of only tracking vials, syringes, or packages, Amara can help clinics understand product usage at the unit, dose, or treatment level, revealing waste, leakage, and reorder timing opportunities.",
 } as const;
 
 export const AI_INSIGHTS = {
@@ -285,7 +285,7 @@ export const WHO_WE_HELP = [
 export const EVALUATOR_QUESTIONS = [
   "Could you identify your most profitable service in under 30 seconds?",
   "Do you know which patients are most likely to stop returning?",
-  "Can you see inventory waste by unit, dose, or treatment—not just vial or package?",
+  "Can you see inventory waste by unit, dose, or treatment, not just vial or package?",
   "Do you know which providers create the highest long-term patient value?",
   "Can you connect marketing spend to profitable patients?",
   "Do you receive clear monthly recommendations, not just reports?",

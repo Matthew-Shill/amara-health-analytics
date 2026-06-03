@@ -25,7 +25,7 @@ export function AboutSection() {
               better experiences for both providers and patients.
             </p>
             <p className="mt-6 border-t border-[color-mix(in_srgb,var(--amara-nude-stone)_30%,transparent)] pt-6 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_70%,white)]">
-              We are positioned as a trusted partner—not just a software vendor or dashboard
+              We are positioned as a trusted partner, not just a software vendor or dashboard
               builder. The experience is custom, human, and built around your business.
             </p>
           </div>

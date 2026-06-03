@@ -18,7 +18,7 @@ export function ServicesSection() {
         <SectionHeading
           eyebrow="Capabilities"
           title="What We Do"
-          subtitle="Three pillars of clarity—plus thoughtful, AI-assisted insights when they genuinely help leaders act on what the data reveals."
+          subtitle="Three pillars of clarity, plus thoughtful, AI-assisted insights when they genuinely help leaders act on what the data reveals."
         />
       </Reveal>
 

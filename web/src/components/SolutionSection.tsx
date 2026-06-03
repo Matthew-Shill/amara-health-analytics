@@ -107,7 +107,7 @@ export function SolutionSection() {
                 ))}
               </div>
               <p className="mt-6 rounded-2xl border border-[color-mix(in_srgb,var(--amara-smoked-teal)_20%,transparent)] bg-gradient-to-r from-[color-mix(in_srgb,var(--amara-smoked-teal)_12%,white)] to-transparent px-5 py-4 text-sm leading-relaxed text-espresso">
-                Amara is not simply a dashboard company—we partner at the intersection of
+                Amara is not simply a dashboard company. We partner at the intersection of
                 analytics, operations, technology, and growth strategy.
               </p>
             </div>

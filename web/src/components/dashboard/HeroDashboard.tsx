@@ -110,7 +110,7 @@ export function HeroDashboard() {
               Insight
             </p>
             <p className="mt-1 text-xs leading-relaxed text-espresso">
-              Retention up 6% QoQ — prioritize re-booking for high-LTV cohort.
+              Retention up 6% QoQ. Prioritize re-booking for high-LTV cohort.
             </p>
           </div>
         </div>
