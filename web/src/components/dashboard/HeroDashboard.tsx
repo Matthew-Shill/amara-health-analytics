@@ -52,7 +52,7 @@ export function HeroDashboard() {
               Executive Overview
             </p>
             <p className="mt-1 font-headline text-lg text-espresso sm:text-xl">
-              Practice Intelligence
+              Business Visibility
             </p>
           </div>
           <div className="flex items-center gap-2 rounded-full bg-[color-mix(in_srgb,var(--amara-smoked-teal)_15%,white)] px-3 py-1.5 ring-1 ring-[color-mix(in_srgb,var(--amara-smoked-teal)_25%,transparent)]">

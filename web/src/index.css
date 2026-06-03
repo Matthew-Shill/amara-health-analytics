@@ -309,6 +309,15 @@ body {
   color: transparent;
 }
 
+.keyword-emphasis {
+  color: var(--amara-smoked-teal);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--amara-nude-stone) 70%, var(--amara-smoked-teal));
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
+
 .stat-chip {
   border-radius: 9999px;
   border: 1px solid color-mix(in srgb, var(--amara-nude-stone) 55%, transparent);

@@ -1,7 +1,7 @@
 export const COMPANY_NAME = "Amara Health Analytics";
 export const TAGLINE = "Have Your AHA Moment";
 export const MISSION =
-  "Transforming health data into intelligent growth and better care.";
+  "Discover the profit, retention, and growth opportunities hiding in your business.";
 
 /** Primary web paths — SVG for crisp scaling. PNG copies live alongside in assets/ for export/print. */
 export const LOGO = {

@@ -4,6 +4,7 @@ import { ProblemSection } from "@/components/ProblemSection";
 import { SolutionSection } from "@/components/SolutionSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { DemoWorkSection } from "@/components/DemoWorkSection";
+import { AIInsightsSection } from "@/components/AIInsightsSection";
 import { WhoWeHelpSection } from "@/components/WhoWeHelpSection";
 import { NeedsEvaluator } from "@/components/NeedsEvaluator";
 import { ProcessSection } from "@/components/ProcessSection";
@@ -28,6 +29,7 @@ export default function App() {
         <SolutionSection />
         <ServicesSection />
         <DemoWorkSection />
+        <AIInsightsSection />
         <WhoWeHelpSection />
         <NeedsEvaluator />
         <ProcessSection />

@@ -1,4 +1,5 @@
 import { PROCESS_STEPS } from "@/lib/content";
+import { AmaraIcon, PROCESS_ICONS } from "@/components/ui/icons/AmaraIcon";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionBackdrop } from "@/components/ui/SectionBackdrop";
@@ -22,11 +23,14 @@ export function ProcessSection() {
           {PROCESS_STEPS.map((item, i) => (
             <Reveal key={item.step} delay={(i % 4) as 0 | 1 | 2 | 3}>
               <li className="card-lift relative flex flex-col items-center text-center lg:items-stretch lg:text-left">
-                <span className="relative z-10 mx-auto flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-smoked-teal to-[color-mix(in_srgb,var(--amara-smoked-teal)_70%,var(--amara-espresso))] font-headline text-2xl font-semibold text-pearl shadow-[0_12px_32px_-8px_color-mix(in_srgb,var(--amara-smoked-teal)_45%,transparent)] lg:mx-0">
-                  {item.step}
+                <span className="relative z-10 mx-auto flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-smoked-teal to-[color-mix(in_srgb,var(--amara-smoked-teal)_70%,var(--amara-espresso))] shadow-[0_12px_32px_-8px_color-mix(in_srgb,var(--amara-smoked-teal)_45%,transparent)] lg:mx-0">
+                  <AmaraIcon name={PROCESS_ICONS[i]} className="h-7 w-7 text-pearl" />
                 </span>
                 <div className="mt-5 rounded-2xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_35%,transparent)] bg-white/70 p-5 lg:flex-1">
-                  <h3 className="font-headline text-lg font-semibold text-espresso">
+                  <p className="text-[10px] font-bold uppercase tracking-wider text-smoked-teal">
+                    Step {item.step}
+                  </p>
+                  <h3 className="mt-1 font-headline text-lg font-semibold text-espresso">
                     {item.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_72%,white)]">

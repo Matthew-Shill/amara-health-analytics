@@ -1,4 +1,5 @@
 import { PROBLEMS } from "@/lib/content";
+import { AmaraIcon, PROBLEM_ICONS } from "@/components/ui/icons/AmaraIcon";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionBackdropWide } from "@/components/ui/SectionBackdrop";
@@ -10,7 +11,7 @@ export function ProblemSection() {
         <SectionHeading
           eyebrow="The challenge"
           title="Your business is generating data every day. Most of it is going unused."
-          subtitle="Important decisions are often made with incomplete information, disconnected systems, and reporting that doesn't tell the full story."
+          subtitle="Important decisions are often made with incomplete information—while profit leakage, retention risk, and inventory waste stay hidden in disconnected systems."
         />
       </Reveal>
 
@@ -28,8 +29,14 @@ export function ProblemSection() {
                 i < 2 ? "lg:min-h-[200px] lg:flex-row lg:items-center lg:gap-6" : ""
               }`}
             >
-              <span className="card-number shrink-0" aria-hidden>
-                {String(i + 1).padStart(2, "0")}
+              <span
+                className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[color-mix(in_srgb,var(--amara-smoked-teal)_10%,white)] ring-1 ring-[color-mix(in_srgb,var(--amara-smoked-teal)_18%,transparent)]"
+                aria-hidden
+              >
+                <AmaraIcon
+                  name={PROBLEM_ICONS[i]}
+                  className="h-7 w-7 text-smoked-teal transition-colors group-hover:text-[color-mix(in_srgb,var(--amara-smoked-teal)_80%,var(--amara-espresso))]"
+                />
               </span>
               <div className={i === 0 ? "lg:flex-1" : ""}>
                 <h3 className="font-headline text-xl font-semibold text-espresso transition-colors group-hover:text-smoked-teal sm:text-2xl">

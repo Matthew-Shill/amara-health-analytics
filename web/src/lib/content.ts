@@ -2,80 +2,83 @@ export const PROBLEMS = [
   {
     title: "Disconnected Data",
     description:
-      "Information lives across platforms with no unified view.",
+      "Information lives across scheduling, payments, EMR, inventory, marketing, and spreadsheets.",
   },
   {
-    title: "Unclear Marketing ROI",
+    title: "Profit Blind Spots",
     description:
-      "You know you're spending money, but not always what's driving results.",
+      "Revenue may look strong while margins, product costs, and waste tell a different story.",
   },
   {
-    title: "Patient Retention Blind Spots",
+    title: "Patient Retention Gaps",
     description:
-      "Opportunities to improve retention often go unnoticed.",
+      "Clinics often discover churn after patients have already stopped returning.",
+  },
+  {
+    title: "Inventory Waste",
+    description:
+      "Products may be tracked by vial, package, or syringe—but real usage often happens by unit, dose, or treatment.",
   },
   {
     title: "Manual Reporting",
     description:
-      "Hours are wasted compiling reports instead of acting on insights.",
-  },
-  {
-    title: "Operational Inefficiencies",
-    description:
-      "Hidden bottlenecks quietly impact growth and patient experience.",
+      "Leaders spend hours compiling reports instead of acting on insights.",
   },
 ] as const;
 
 export const SOLUTION_POINTS = [
-  "Understand business performance",
+  "Understand true business performance",
+  "Identify profit leakage",
+  "Track inventory by real usage",
   "Improve patient retention",
-  "Identify revenue opportunities",
-  "Streamline operations",
-  "Build meaningful reporting systems",
-  "Create executive dashboards",
+  "Reveal provider and service performance",
+  "Surface AI-assisted recommendations",
   "Make smarter growth decisions",
 ] as const;
 
 export const SERVICES = [
   {
-    title: "Analytics & Business Intelligence",
+    title: "Business Insights",
     features: [
-      "KPI Dashboards",
-      "Executive Reporting",
-      "Revenue Analysis",
-      "Retention Analysis",
-      "Forecasting",
-      "Trend Analysis",
+      "KPI dashboards",
+      "Profit analysis",
+      "Revenue forecasting",
+      "Retention analysis",
+      "Executive reporting",
+      "Trend analysis",
     ],
   },
   {
-    title: "Operations Optimization",
+    title: "Operational Clarity",
     features: [
-      "Workflow Evaluation",
-      "Capacity Analysis",
-      "Scheduling Efficiency",
-      "Process Improvement",
-      "Automation Opportunities",
+      "Inventory utilization",
+      "Unit-level product tracking",
+      "Provider productivity",
+      "Scheduling efficiency",
+      "Capacity analysis",
+      "Workflow optimization",
     ],
   },
   {
-    title: "Marketing & Growth Analytics",
+    title: "Growth Insights",
     features: [
-      "Campaign Reporting",
-      "Lead Tracking",
-      "Conversion Analysis",
-      "Marketing ROI",
-      "Growth Strategy Support",
+      "Marketing attribution",
+      "Lead source analysis",
+      "Campaign ROI",
+      "Patient lifetime value",
+      "Conversion analysis",
+      "Growth strategy support",
     ],
   },
   {
-    title: "Technology & Digital Systems",
+    title: "AI-Assisted Insights",
     features: [
-      "Website Performance",
-      "CRM Optimization",
-      "Data Infrastructure",
-      "Reporting Systems",
-      "Automation Planning",
+      "Weekly executive summaries",
+      "Natural-language data questions",
+      "Risk detection",
+      "Opportunity detection",
+      "Recommendation generation",
+      "Forecasting support",
     ],
   },
 ] as const;
@@ -83,74 +86,108 @@ export const SERVICES = [
 export const DEMOS = [
   {
     id: "retention",
-    title: "Patient Retention Dashboard",
+    title: "Which patients are at risk of not returning?",
     problemSolved:
-      "Teams couldn't see who was at risk of churning or which cohorts were slipping.",
+      "Clinics often cannot identify churn risk until revenue is already lost.",
     keyMetrics: [
       "Retention trends",
       "Churn risk indicators",
       "Appointment frequency",
+      "Lifetime value",
     ],
     decisions: [
       "Re-engagement campaigns",
-      "Membership or package adjustments",
       "Provider follow-up priorities",
+      "Membership or package adjustments",
     ],
     variant: "retention" as const,
   },
   {
-    id: "revenue",
-    title: "Aesthetic Clinic Revenue Snapshot",
+    id: "profitability",
+    title: "Which services are actually most profitable?",
     problemSolved:
-      "Leadership lacked a clear view of service mix, provider contribution, and margin drivers.",
+      "Revenue alone does not reveal margin, product cost, provider cost, or true profitability.",
     keyMetrics: [
-      "Service performance",
-      "Provider productivity",
-      "Revenue breakdowns",
+      "Service margin",
+      "Product cost",
+      "Provider contribution",
+      "Processing fees",
     ],
     decisions: [
-      "Pricing and bundling",
-      "Staffing and capacity",
-      "High-value service focus",
+      "Pricing changes",
+      "Service mix strategy",
+      "Promotion planning",
     ],
-    variant: "revenue" as const,
+    variant: "profitability" as const,
+  },
+  {
+    id: "inventory",
+    title: "Where is product inventory being wasted?",
+    problemSolved:
+      "Many systems track inventory by vial, syringe, or package, while clinics use products by units, doses, or sessions.",
+    keyMetrics: [
+      "Units purchased",
+      "Units administered",
+      "Expected inventory",
+      "Actual inventory variance",
+      "Estimated loss",
+    ],
+    decisions: [
+      "Reorder timing",
+      "Waste reduction",
+      "Product usage accountability",
+    ],
+    variant: "inventory" as const,
+  },
+  {
+    id: "provider-value",
+    title: "Which providers drive the strongest long-term value?",
+    problemSolved:
+      "Provider production does not always reveal retention, lifetime value, or patient loyalty.",
+    keyMetrics: [
+      "Provider utilization",
+      "Rebooking rate",
+      "Average patient value",
+      "Service mix",
+    ],
+    decisions: [
+      "Coaching priorities",
+      "Scheduling strategy",
+      "Hiring or contracting decisions",
+    ],
+    variant: "provider-value" as const,
   },
   {
     id: "marketing",
-    title: "Marketing ROI Tracker",
+    title: "Which marketing channels create profitable patients?",
     problemSolved:
-      "Marketing spend was tracked, but attribution across channels remained unclear.",
-    keyMetrics: ["Lead sources", "Campaign ROI", "Acquisition cost"],
+      "Marketing spend may be tracked, but attribution and patient quality are often unclear.",
+    keyMetrics: [
+      "Lead source",
+      "Campaign ROI",
+      "Acquisition cost",
+      "Patient lifetime value",
+    ],
     decisions: [
       "Budget reallocation",
       "Channel investment",
-      "Campaign creative testing",
+      "Campaign testing",
     ],
     variant: "marketing" as const,
   },
   {
-    id: "utilization",
-    title: "Provider Utilization Report",
-    problemSolved:
-      "Scheduling gaps and uneven demand made it hard to optimize provider time.",
-    keyMetrics: [
-      "Scheduling efficiency",
-      "Utilization trends",
-      "Capacity opportunities",
-    ],
-    decisions: [
-      "Schedule templates",
-      "Hiring or contracting",
-      "Peak-hour staffing",
-    ],
-    variant: "utilization" as const,
-  },
-  {
     id: "executive",
-    title: "Executive Monthly Summary",
+    title: "Executive Monthly Insight Summary",
     problemSolved:
-      "Owners needed one trusted view of performance—not a folder of spreadsheets.",
-    keyMetrics: ["KPI overview", "Trends", "Business recommendations"],
+      "Owners need one trusted view of performance, risks, opportunities, and recommended next steps.",
+    keyMetrics: [
+      "Revenue",
+      "Profit",
+      "Retention",
+      "Inventory",
+      "Utilization",
+      "Growth opportunities",
+    ],
     decisions: [
       "Quarterly priorities",
       "Investment timing",
@@ -160,58 +197,98 @@ export const DEMOS = [
   },
 ] as const;
 
+export const INVENTORY_DEMO = {
+  title: "Track inventory the way clinics actually use it.",
+  rows: [
+    { label: "Botox Units Purchased", value: "5,500" },
+    { label: "Units Administered", value: "4,800" },
+    { label: "Expected Remaining", value: "700" },
+    { label: "Actual Remaining", value: "520" },
+    { label: "Variance", value: "-180 Units", highlight: true },
+    { label: "Estimated Revenue Impact", value: "-$2,700", highlight: true },
+  ],
+  supportingText:
+    "Instead of only tracking vials, syringes, or packages, Amara can help clinics understand product usage at the unit, dose, or treatment level—revealing waste, leakage, and reorder timing opportunities.",
+} as const;
+
+export const AI_INSIGHTS = {
+  title: "AI-assisted insights, not AI for show.",
+  body: "Amara can use AI-assisted summaries, forecasting, anomaly detection, and natural-language data exploration to help leaders understand what changed, why it matters, and what to do next.",
+  cards: [
+    {
+      title: "Weekly Executive Summaries",
+      description: "Automatically summarize wins, risks, and opportunities.",
+    },
+    {
+      title: "Ask Your Data",
+      description:
+        "Explore questions like “Why did revenue decline?” or “Which services retain patients best?”",
+    },
+    {
+      title: "Forecasting",
+      description:
+        "Project revenue, demand, inventory needs, and capacity based on historical trends.",
+    },
+    {
+      title: "Opportunity Detection",
+      description:
+        "Surface hidden patterns in retention, profitability, marketing, and operations.",
+    },
+  ],
+} as const;
+
 export const WHO_WE_HELP = [
   {
     title: "Aesthetic Clinics",
     challenges:
-      "Service mix, provider productivity, and marketing attribution rarely align in one view.",
-    help: "Amara unifies revenue, retention, and campaign data so leaders can grow with precision.",
+      "Service mix, provider productivity, product usage, and marketing attribution rarely align in one view.",
+    help: "Amara clarifies profit, retention, inventory usage, and growth opportunities.",
   },
   {
     title: "Med Spas",
     challenges:
-      "High visit volume and varied offerings make it hard to spot margin and loyalty trends.",
-    help: "We build dashboards that clarify performance by service, location, and provider.",
+      "High visit volume and varied offerings make it difficult to identify margin, loyalty, and waste trends.",
+    help: "We help reveal which services, providers, and products are driving performance.",
   },
   {
     title: "Private Medical Practices",
     challenges:
       "Clinical and operational data often live in separate systems with limited reporting.",
-    help: "Amara connects the dots—helping practices run efficiently while improving patient experience.",
+    help: "Amara connects operational, financial, and patient data into executive-ready insight.",
   },
   {
     title: "Wellness Clinics",
     challenges:
       "Memberships, packages, and multi-touch journeys need analytics beyond basic booking reports.",
-    help: "We surface retention, lifetime value, and program performance in executive-ready formats.",
+    help: "We surface retention, lifetime value, package utilization, and program performance.",
   },
   {
     title: "Therapy Practices",
     challenges:
-      "Capacity, cancellations, and referral sources are difficult to track consistently.",
-    help: "Amara delivers utilization and pipeline insights that support sustainable growth.",
+      "Capacity, cancellations, referrals, and provider availability can be difficult to track consistently.",
+    help: "We deliver utilization, referral, retention, and capacity insights.",
   },
   {
     title: "Health Startups",
     challenges:
-      "Rapid growth demands metrics investors and operators can trust from day one.",
-    help: "We design reporting infrastructure and KPI frameworks that scale with the business.",
+      "Rapid growth requires metrics investors and operators can trust from day one.",
+    help: "We design reporting infrastructure, KPI frameworks, and scalable analytics systems.",
   },
   {
     title: "Multi-Provider Organizations",
     challenges:
-      "Comparing performance across locations and teams requires standardized intelligence.",
-    help: "Amara builds unified reporting so leadership sees the full picture—not fragmented snapshots.",
+      "Comparing performance across locations and teams requires consistent visibility.",
+    help: "Amara builds unified reporting so leadership sees profit, retention, and growth opportunities across the organization.",
   },
 ] as const;
 
 export const EVALUATOR_QUESTIONS = [
-  "Do you know which services generate your highest profit?",
-  "Can you clearly identify where your best patients come from?",
-  "Do you know your patient retention rate?",
-  "Are your reports consistent and reliable?",
-  "Can you easily connect data across systems?",
-  "Do you make decisions using trusted metrics?",
+  "Could you identify your most profitable service in under 30 seconds?",
+  "Do you know which patients are most likely to stop returning?",
+  "Can you see inventory waste by unit, dose, or treatment—not just vial or package?",
+  "Do you know which providers create the highest long-term patient value?",
+  "Can you connect marketing spend to profitable patients?",
+  "Do you receive clear monthly recommendations, not just reports?",
 ] as const;
 
 export const PROCESS_STEPS = [
@@ -227,8 +304,8 @@ export const PROCESS_STEPS = [
   },
   {
     step: 3,
-    title: "Intelligence Buildout",
-    description: "Develop dashboards, reporting, and insights.",
+    title: "Insights Buildout",
+    description: "Develop dashboards, reporting, and actionable insight.",
   },
   {
     step: 4,
@@ -243,11 +320,12 @@ export const PROCESS_STEPS = [
 ] as const;
 
 export const ABOUT_CAPABILITIES = [
-  "Analytics",
+  "Business Insights",
   "Data Visualization",
+  "Profitability Analysis",
+  "Inventory Clarity",
   "Operations Strategy",
-  "Technology Consulting",
-  "Digital Systems",
+  "Growth Insights",
+  "AI-Assisted Insights",
   "Reporting Infrastructure",
-  "Growth Intelligence",
 ] as const;

@@ -4,26 +4,26 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 
-/** Score = confirmed capabilities (Yes). Fewer Yes answers indicate larger intelligence gaps. */
+/** Score = confirmed capabilities (Yes). Fewer Yes answers indicate larger visibility gaps. */
 function getResult(yesCount: number) {
   if (yesCount <= 2) {
     return {
-      tier: "light",
-      title: "Light analytics support may be enough",
-      body: "You may only need light analytics support. Amara can still help refine reporting and validate key metrics.",
+      tier: "low",
+      title: "Significant blind spots may exist",
+      body: "You may be operating with significant blind spots. Amara can help uncover hidden opportunities in your data.",
     };
   }
   if (yesCount <= 4) {
     return {
-      tier: "gaps",
-      title: "Intelligence gaps worth exploring",
-      body: "There are likely intelligence gaps worth exploring. A focused review could unlock clearer decisions quickly.",
+      tier: "medium",
+      title: "Visibility gaps worth addressing",
+      body: "You have some visibility, but likely still have gaps in profit, retention, inventory, or growth insight.",
     };
   }
   return {
-    tier: "strategic",
-    title: "Excellent candidate for strategic review",
-    body: "You are an excellent candidate for a strategic analytics review. Amara can help build the intelligence foundation your organization needs.",
+    tier: "high",
+    title: "Strong foundation, room to refine",
+    body: "You have a strong foundation. Amara can help refine your reporting and insight layer with forecasting, thoughtful AI support, and executive summaries.",
   };
 }
 
@@ -64,7 +64,7 @@ export function NeedsEvaluator() {
         <Reveal>
           <SectionHeading
             eyebrow="Quick assessment"
-            title="Do you need better health business intelligence?"
+            title="How clearly can you see your business?"
           />
         </Reveal>
 
@@ -132,7 +132,7 @@ export function NeedsEvaluator() {
                   {result.body}
                 </p>
                 <div className="mt-8 flex flex-wrap justify-center gap-4">
-                  <Button href="#contact">Request an Analytics Review</Button>
+                  <Button href="#contact">Book a Consultation</Button>
                   <Button variant="secondary" onClick={reset}>
                     Start over
                   </Button>

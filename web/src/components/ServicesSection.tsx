@@ -1,4 +1,5 @@
 import { SERVICES } from "@/lib/content";
+import { AmaraIcon, SERVICE_ICON_NAMES } from "@/components/ui/icons/AmaraIcon";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionBackdropWide } from "@/components/ui/SectionBackdrop";
@@ -10,13 +11,15 @@ const SERVICE_ACCENTS = [
   "from-nude-stone/35 to-pearl",
 ];
 
-const SERVICE_ICONS = ["◉", "◇", "△", "⬡"];
-
 export function ServicesSection() {
   return (
     <SectionBackdropWide id="services" tone="teal">
       <Reveal>
-        <SectionHeading eyebrow="Capabilities" title="What We Do" />
+        <SectionHeading
+          eyebrow="Capabilities"
+          title="What We Do"
+          subtitle="Three pillars of clarity—plus thoughtful, AI-assisted insights when they genuinely help leaders act on what the data reveals."
+        />
       </Reveal>
 
       <div className="grid gap-6 md:grid-cols-2">
@@ -28,11 +31,20 @@ export function ServicesSection() {
                 aria-hidden
               />
               <div className="relative flex items-start gap-4">
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-smoked-teal to-[color-mix(in_srgb,var(--amara-smoked-teal)_65%,var(--amara-espresso))] text-xl text-pearl shadow-lg">
-                  {SERVICE_ICONS[i]}
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-smoked-teal to-[color-mix(in_srgb,var(--amara-smoked-teal)_65%,var(--amara-espresso))] shadow-lg">
+                  <AmaraIcon
+                    name={SERVICE_ICON_NAMES[i]}
+                    className="h-6 w-6 text-pearl"
+                  />
                 </span>
                 <h3 className="font-headline text-2xl font-semibold leading-tight text-espresso">
-                  {service.title}
+                  {service.title.includes("AI-Assisted") ? (
+                    <>
+                      <span className="keyword-emphasis">AI-Assisted</span> Insights
+                    </>
+                  ) : (
+                    service.title
+                  )}
                 </h3>
               </div>
               <ul className="relative mt-6 grid gap-2.5 sm:grid-cols-2">

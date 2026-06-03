@@ -3,7 +3,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 
 interface SectionHeadingProps {
   eyebrow?: string;
-  title: string;
+  title: ReactNode;
   subtitle?: string;
   align?: "left" | "center";
   children?: ReactNode;

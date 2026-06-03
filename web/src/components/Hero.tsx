@@ -5,10 +5,11 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const heroTagline = TAGLINE;
 
-const stats = [
-  { label: "Retention clarity", value: "87%" },
-  { label: "Marketing ROI", value: "4.2×" },
-  { label: "Revenue growth", value: "+18%" },
+const focusAreas = [
+  "Profit Clarity",
+  "Retention Visibility",
+  "Inventory Clarity",
+  "Growth Insights",
 ];
 
 export function Hero() {
@@ -29,7 +30,7 @@ export function Hero() {
       <div className="section-pad container-wide relative z-10 pb-20 lg:pb-28">
         <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 xl:gap-16">
           <div className="max-w-xl animate-fade-up">
-            <Eyebrow className="mb-6">Healthcare & wellness intelligence</Eyebrow>
+            <Eyebrow className="mb-6">Healthcare & wellness clarity</Eyebrow>
 
             <h1 className="font-headline text-[2.65rem] font-semibold leading-[1.06] text-espresso sm:text-5xl lg:text-[3.5rem]">
               {heroTagline.replace("AHA Moment", "").trim()}{" "}
@@ -46,19 +47,15 @@ export function Hero() {
             </p>
 
             <p className="mt-5 text-base leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_78%,white)] sm:text-lg">
-              Amara Health Analytics helps healthcare, wellness, and aesthetic
-              businesses uncover opportunities hidden within their data—creating
-              smarter operations, stronger growth, and better experiences for both
-              providers and patients.
+              Amara Health Analytics helps healthcare, wellness, and aesthetic organizations
+              turn disconnected data into clear, actionable insight—so leaders can reduce waste,
+              improve retention, and make smarter growth decisions.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              {stats.map((s) => (
-                <div key={s.label} className="stat-chip">
-                  <strong>{s.value}</strong>{" "}
-                  <span className="text-[color-mix(in_srgb,var(--amara-espresso)_65%,white)]">
-                    {s.label}
-                  </span>
+              {focusAreas.map((label) => (
+                <div key={label} className="stat-chip">
+                  {label}
                 </div>
               ))}
             </div>
@@ -82,13 +79,19 @@ export function Hero() {
 
       <div className="relative z-10 border-t border-[color-mix(in_srgb,var(--amara-nude-stone)_40%,transparent)] bg-[color-mix(in_srgb,white_50%,var(--amara-pearl))]">
         <div className="container-wide flex flex-wrap items-center justify-center gap-x-10 gap-y-3 px-5 py-4 text-center text-xs font-semibold uppercase tracking-[0.14em] text-[color-mix(in_srgb,var(--amara-espresso)_55%,white)] sm:justify-between sm:px-8 sm:text-left lg:px-12">
-          <span>Analytics</span>
+          <span>
+            <span className="keyword-emphasis">Revenue</span> clarity
+          </span>
           <span className="hidden h-1 w-1 rounded-full bg-nude-stone sm:block" />
-          <span>Business intelligence</span>
+          <span>
+            <span className="keyword-emphasis">Performance</span> visibility
+          </span>
           <span className="hidden h-1 w-1 rounded-full bg-nude-stone sm:block" />
-          <span>Operations strategy</span>
+          <span>
+            <span className="keyword-emphasis">Operational</span> clarity
+          </span>
           <span className="hidden h-1 w-1 rounded-full bg-nude-stone sm:block" />
-          <span>Growth optimization</span>
+          <span>Strategic insights</span>
         </div>
       </div>
     </section>

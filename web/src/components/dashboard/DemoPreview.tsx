@@ -1,4 +1,10 @@
-type DemoVariant = "retention" | "revenue" | "marketing" | "utilization" | "executive";
+type DemoVariant =
+  | "retention"
+  | "profitability"
+  | "inventory"
+  | "provider-value"
+  | "marketing"
+  | "executive";
 
 interface DemoPreviewProps {
   variant: DemoVariant;
@@ -11,8 +17,8 @@ export function DemoPreview({ variant }: DemoPreviewProps) {
     return (
       <div className="space-y-2 p-3">
         <div className="flex justify-between text-[10px] font-medium text-smoked-teal">
-          <span>90-day retention</span>
-          <span>87%</span>
+          <span>90-day retention trend</span>
+          <span className="text-espresso">At-risk cohort</span>
         </div>
         <div className={`${shared} h-16`}>
           <div className="flex h-full items-end gap-1">
@@ -28,48 +34,84 @@ export function DemoPreview({ variant }: DemoPreviewProps) {
         <div className="grid grid-cols-2 gap-2 text-[10px]">
           <div className={`${shared} text-espresso`}>
             <span className="text-[color-mix(in_srgb,var(--amara-espresso)_60%,white)]">
-              At risk
+              Churn risk
             </span>
             <p className="font-semibold">24 patients</p>
           </div>
           <div className={`${shared} text-espresso`}>
             <span className="text-[color-mix(in_srgb,var(--amara-espresso)_60%,white)]">
-              Avg visits
+              Lifetime value
             </span>
-            <p className="font-semibold">3.4 / quarter</p>
+            <p className="font-semibold">$1,840 avg</p>
           </div>
         </div>
       </div>
     );
   }
 
-  if (variant === "revenue") {
+  if (variant === "profitability") {
     return (
-      <div className="space-y-2 p-3">
-        <div className="flex gap-2">
-          {["Injectables", "Laser", "Skin"].map((s, i) => (
-            <div key={s} className={`${shared} flex-1 py-2 text-center text-[9px]`}>
+      <div className="space-y-2 p-3 text-[10px]">
+        {[
+          { service: "Injectables", margin: "62%", revenue: "$84k" },
+          { service: "Laser", margin: "41%", revenue: "$52k" },
+          { service: "Skin", margin: "38%", revenue: "$31k" },
+        ].map((row) => (
+          <div key={row.service} className={`${shared} flex items-center gap-2 text-espresso`}>
+            <span className="w-16 shrink-0 font-medium">{row.service}</span>
+            <div className="h-1.5 flex-1 rounded-full bg-pearl">
               <div
-                className="mx-auto mb-1 h-8 w-8 rounded-full border-4 border-smoked-teal"
-                style={{
-                  borderColor: i === 0 ? "#43696A" : i === 1 ? "#D8C0A8" : "#4B342B",
-                  borderTopColor: "transparent",
-                  transform: `rotate(${i * 40}deg)`,
-                }}
+                className="h-full rounded-full bg-smoked-teal"
+                style={{ width: row.margin }}
               />
-              {s}
             </div>
-          ))}
-        </div>
-        <div className={`${shared} text-[10px] text-espresso`}>
-          <div className="flex justify-between border-b border-pearl pb-1">
-            <span>Top provider</span>
-            <span className="font-semibold">+$42k MTD</span>
+            <span className="w-10 text-right font-semibold text-smoked-teal">{row.margin}</span>
+            <span className="w-12 text-right">{row.revenue}</span>
           </div>
-          <div className="mt-2 h-2 rounded-full bg-pearl">
-            <div className="h-full w-[68%] rounded-full bg-nude-stone" />
+        ))}
+        <p className={`${shared} text-[color-mix(in_srgb,var(--amara-espresso)_72%,white)]`}>
+          Margin view includes product cost, provider time, and processing fees.
+        </p>
+      </div>
+    );
+  }
+
+  if (variant === "inventory") {
+    return (
+      <div className="space-y-2 p-3 text-[10px]">
+        {[
+          { label: "Purchased", value: "5,500 units" },
+          { label: "Administered", value: "4,800 units" },
+          { label: "Expected", value: "700 units" },
+          { label: "Actual", value: "520 units" },
+        ].map((row) => (
+          <div key={row.label} className={`${shared} flex justify-between text-espresso`}>
+            <span>{row.label}</span>
+            <span className="font-semibold">{row.value}</span>
           </div>
+        ))}
+        <div className={`${shared} flex justify-between border border-[color-mix(in_srgb,var(--amara-smoked-teal)_20%,transparent)] bg-[color-mix(in_srgb,var(--amara-smoked-teal)_8%,white)] text-smoked-teal`}>
+          <span>Variance</span>
+          <span className="font-semibold">-180 units</span>
         </div>
+      </div>
+    );
+  }
+
+  if (variant === "provider-value") {
+    return (
+      <div className="space-y-2 p-3 text-[10px]">
+        {[
+          { provider: "Dr. A", rebook: "78%", value: "$2.4k" },
+          { provider: "Dr. B", rebook: "71%", value: "$2.1k" },
+          { provider: "NP C", rebook: "64%", value: "$1.7k" },
+        ].map((row) => (
+          <div key={row.provider} className={`${shared} grid grid-cols-3 gap-2 text-espresso`}>
+            <span className="font-medium">{row.provider}</span>
+            <span>Rebook {row.rebook}</span>
+            <span className="text-right font-semibold text-smoked-teal">{row.value}</span>
+          </div>
+        ))}
       </div>
     );
   }
@@ -97,47 +139,24 @@ export function DemoPreview({ variant }: DemoPreviewProps) {
     );
   }
 
-  if (variant === "utilization") {
-    return (
-      <div className="grid grid-cols-7 gap-1 p-3">
-        {Array.from({ length: 21 }).map((_, i) => (
-          <div
-            key={i}
-            className="aspect-square rounded-sm"
-            style={{
-              backgroundColor:
-                i % 5 === 0
-                  ? "color-mix(in srgb, var(--amara-smoked-teal) 70%, white)"
-                  : i % 3 === 0
-                    ? "color-mix(in srgb, var(--amara-nude-stone) 80%, white)"
-                    : "color-mix(in srgb, var(--amara-pearl) 90%, white)",
-            }}
-          />
-        ))}
-      </div>
-    );
-  }
-
   return (
     <div className="space-y-2 p-3 text-[10px]">
       {[
-        { kpi: "Revenue", val: "$284k", delta: "+9%" },
-        { kpi: "Retention", val: "86%", delta: "+3%" },
-        { kpi: "Utilization", val: "74%", delta: "+5%" },
+        { kpi: "Revenue", val: "$284k" },
+        { kpi: "Profit", val: "$96k" },
+        { kpi: "Retention", val: "86%" },
+        { kpi: "Inventory", val: "-180 units" },
       ].map((row) => (
         <div
           key={row.kpi}
           className={`${shared} flex items-center justify-between text-espresso`}
         >
           <span>{row.kpi}</span>
-          <span>
-            <strong>{row.val}</strong>{" "}
-            <span className="text-smoked-teal">{row.delta}</span>
-          </span>
+          <strong>{row.val}</strong>
         </div>
       ))}
       <p className={`${shared} leading-relaxed text-espresso`}>
-        Recommendation: expand high-margin services with strongest retention cohort.
+        Recommended focus: address inventory variance and re-engage at-risk patients.
       </p>
     </div>
   );
