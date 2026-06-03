@@ -343,6 +343,94 @@ export const PROCESS_STEPS = [
   },
 ] as const;
 
+export type TeamMember = {
+  id: string;
+  name: string;
+  aboutName?: string;
+  lastName: string;
+  title: string;
+  credential: string;
+  support: string;
+  bio: string;
+  image: string | null;
+  initials: string;
+  aboutImage?: {
+    widthPercent: number;
+    leftPercent: number;
+    topPercent: number;
+  };
+};
+
+export const TEAM_MEMBERS = [
+  {
+    id: "nadine",
+    name: "Nadine",
+    lastName: "",
+    title: "Co-Founder & Lead Analytics Consultant",
+    credential:
+      "Johns Hopkins-trained Applied & Computational Mathematics professional with experience in AI, machine learning, data analytics, and healthcare-focused systems.",
+    support:
+      "Nadine helps transform complex operational and client data into clear reporting, practical recommendations, and smarter growth decisions.",
+    bio: "Nadine brings a strong quantitative and technical foundation to Amara Health Analytics, with graduate training in Applied & Computational Mathematics from Johns Hopkins University and experience across AI, machine learning, data analytics, and modern digital systems. Her work focuses on turning complex information into clear, useful insight for healthcare, wellness, and aesthetic businesses.",
+    image: "/images/Nadine Headshot.jpg",
+    initials: "N",
+  },
+  {
+    id: "matt",
+    name: "Matt Shill",
+    aboutName: "Matthew",
+    lastName: "",
+    title: "Co-Founder & Systems / Digital Strategy",
+    credential:
+      "Technology, web systems, automation, branding, and client experience strategy.",
+    support:
+      "Matthew supports the systems, digital experience, and implementation side of Amara's work, helping turn insights into usable workflows and client-facing improvements.",
+    bio: "Matt supports Amara's digital systems, implementation strategy, website experience, automation planning, and client-facing workflows. His background in technology, branding, and business systems helps Amara connect analytics with practical tools that improve how teams operate and communicate.",
+    image: "/images/40170020.JPG",
+    initials: "MS",
+  },
+] as const satisfies readonly TeamMember[];
+
+export const ABOUT_APPROACH_CARDS = [
+  {
+    title: "Clear Reporting",
+    description:
+      "We translate scattered data into cohesive reports that are easy to understand.",
+  },
+  {
+    title: "Operational Insight",
+    description:
+      "We identify patterns in scheduling, client behavior, revenue, retention, and service performance.",
+  },
+  {
+    title: "Practical Recommendations",
+    description:
+      "We connect the numbers to real next steps your team can actually use.",
+  },
+] as const;
+
+export const ABOUT_VALUES = [
+  {
+    title: "Clarity Over Complexity",
+    description: "The best analytics should make decisions easier, not harder.",
+  },
+  {
+    title: "Human Expertise First",
+    description:
+      "We use technology to support thoughtful analysis, not to replace people.",
+  },
+  {
+    title: "Better Care Through Better Systems",
+    description:
+      "When teams understand their operations clearly, they can create better experiences for providers and clients.",
+  },
+  {
+    title: "Actionable, Not Abstract",
+    description:
+      "Every insight should connect to a real business or care improvement.",
+  },
+] as const;
+
 export const ABOUT_CAPABILITIES = [
   "Business Insights",
   "Data Visualization",

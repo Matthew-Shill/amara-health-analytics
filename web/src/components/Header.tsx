@@ -1,34 +1,14 @@
 import { useEffect, useState } from "react";
-import { COMPANY_NAME, LOGO, NAV_LINKS } from "@/lib/brand";
+import { Link, useLocation } from "react-router-dom";
+import { COMPANY_NAME, NAV_LINKS } from "@/lib/brand";
 import { useScrollHeader } from "@/hooks/useScrollHeader";
 import { Button } from "@/components/ui/Button";
-
-function HeaderBrand() {
-  return (
-    <div className="flex min-w-0 items-center gap-3 sm:gap-4">
-      <img
-        src={LOGO.iconTeal}
-        alt=""
-        className="h-12 w-12 shrink-0 sm:h-14 sm:w-14 md:h-16 md:w-16"
-        width={64}
-        height={64}
-        aria-hidden
-      />
-      <div className="flex min-w-0 flex-col justify-center leading-none">
-        <span className="font-headline text-[1.35rem] font-semibold tracking-[0.06em] text-smoked-teal sm:text-[1.65rem] md:text-[1.85rem]">
-          AMARA
-        </span>
-        <span className="mt-1 font-body text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-smoked-teal sm:mt-1.5 sm:text-xs md:text-[0.8rem]">
-          Health Analytics
-        </span>
-      </div>
-    </div>
-  );
-}
+import { BrandMark } from "@/components/ui/BrandMark";
 
 export function Header() {
   const scrolled = useScrollHeader();
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -50,29 +30,33 @@ export function Header() {
           }`}
         >
           <div className="container-wide flex items-center justify-between gap-4 px-5 py-3.5 sm:px-8 sm:py-4 lg:px-12">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="relative z-50 shrink-0 transition-opacity hover:opacity-90"
               aria-label={`${COMPANY_NAME} home`}
               onClick={closeMenu}
             >
-              <HeaderBrand />
-            </a>
+              <BrandMark />
+            </Link>
 
             <nav className="hidden items-center gap-9 lg:flex" aria-label="Primary">
               {NAV_LINKS.map((link) => (
-                <a
+                <Link
                   key={link.href}
-                  href={link.href}
-                  className="nav-link-underline text-sm font-medium text-[color-mix(in_srgb,var(--amara-espresso)_88%,white)] transition-colors hover:text-smoked-teal"
+                  to={link.href}
+                  className={`nav-link-underline text-sm font-medium transition-colors hover:text-smoked-teal ${
+                    location.pathname === link.href
+                      ? "text-smoked-teal"
+                      : "text-[color-mix(in_srgb,var(--amara-espresso)_88%,white)]"
+                  }`}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </nav>
 
             <div className="hidden lg:block">
-              <Button href="#contact">Book a Consultation</Button>
+              <Button href="/#contact">Book a Consultation</Button>
             </div>
 
             <button
@@ -110,16 +94,16 @@ export function Header() {
           aria-label="Mobile"
         >
           {NAV_LINKS.map((link) => (
-            <a
+            <Link
               key={link.href}
-              href={link.href}
+              to={link.href}
               className="font-headline text-3xl text-espresso transition-colors hover:text-smoked-teal"
               onClick={closeMenu}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <Button href="#contact" className="mt-6 w-fit" onClick={closeMenu}>
+          <Button href="/#contact" className="mt-6 w-fit" onClick={closeMenu}>
             Book a Consultation
           </Button>
         </nav>

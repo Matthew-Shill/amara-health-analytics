@@ -1,43 +1,41 @@
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { ProblemSection } from "@/components/ProblemSection";
-import { SolutionSection } from "@/components/SolutionSection";
-import { ServicesSection } from "@/components/ServicesSection";
-import { DemoWorkSection } from "@/components/DemoWorkSection";
-import { AIInsightsSection } from "@/components/AIInsightsSection";
-import { WhoWeHelpSection } from "@/components/WhoWeHelpSection";
-import { NeedsEvaluator } from "@/components/NeedsEvaluator";
-import { ProcessSection } from "@/components/ProcessSection";
-import { AboutSection } from "@/components/AboutSection";
-import { ContactSection } from "@/components/ContactSection";
-import { FinalCTA } from "@/components/FinalCTA";
-import { Footer } from "@/components/Footer";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { HomePage } from "@/pages/HomePage";
+import { AboutPage } from "@/pages/AboutPage";
+import { PrivacySecurityPage } from "@/pages/PrivacySecurityPage";
+
+function ScrollToHash() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const id = hash.replace("#", "");
+      const timer = window.setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      }, 0);
+      return () => window.clearTimeout(timer);
+    }
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
+
+  return null;
+}
 
 export default function App() {
   return (
     <>
+      <ScrollToHash />
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-pearl focus:px-4 focus:py-2 focus:text-espresso"
       >
         Skip to content
       </a>
-      <Header />
-      <main id="main">
-        <Hero />
-        <ProblemSection />
-        <SolutionSection />
-        <ServicesSection />
-        <DemoWorkSection />
-        <AIInsightsSection />
-        <WhoWeHelpSection />
-        <NeedsEvaluator />
-        <ProcessSection />
-        <AboutSection />
-        <ContactSection />
-        <FinalCTA />
-      </main>
-      <Footer />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/privacy-security" element={<PrivacySecurityPage />} />
+      </Routes>
     </>
   );
 }

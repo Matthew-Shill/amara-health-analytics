@@ -28,6 +28,7 @@ function syncDir(relativePath) {
   console.log(`Synced ${relativePath}/ → web/public/${relativePath}/`);
 }
 
-// Logos (SVG + PNG) and fonts used by the site
+// Logos (SVG + PNG), fonts, and team images used by the site
 syncDir("logos");
 syncDir("fonts");
+syncDir("images");

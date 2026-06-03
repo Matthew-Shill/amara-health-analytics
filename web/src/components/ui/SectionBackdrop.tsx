@@ -1,12 +1,13 @@
 import type { ReactNode } from "react";
 import { BrandMotif } from "@/components/ui/BrandMotif";
 
-type Tone = "default" | "warm" | "teal" | "contrast";
+type Tone = "default" | "warm" | "teal" | "teal-rich" | "contrast";
 
 const tones: Record<Tone, string> = {
   default: "section-tone-default",
   warm: "section-tone-warm",
   teal: "section-tone-teal",
+  "teal-rich": "section-tone-teal-rich",
   contrast: "section-tone-contrast",
 };
 

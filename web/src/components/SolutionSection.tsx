@@ -17,7 +17,7 @@ const workflow = [
 
 export function SolutionSection() {
   return (
-    <SectionBackdrop id="solution" tone="default">
+    <SectionBackdrop id="solution" tone="teal-rich">
       <div className="relative">
         <Reveal>
           <SectionHeading

@@ -11,7 +11,7 @@ export function ProblemSection() {
         <SectionHeading
           eyebrow="The challenge"
           title="Your business is generating data every day. Most of it is going unused."
-          subtitle="Important decisions are often made with incomplete information, while profit leakage, retention risk, and inventory waste stay hidden in disconnected systems."
+          subtitle="Important decisions are often made with incomplete information. This leaves profit leakage, retention risk, and inventory waste hidden in disconnected systems."
         />
       </Reveal>
 

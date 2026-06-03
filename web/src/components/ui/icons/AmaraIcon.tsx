@@ -36,7 +36,16 @@ export type AmaraIconName =
   | "wellness-clinic"
   | "therapy-practice"
   | "health-startup"
-  | "multi-provider";
+  | "multi-provider"
+  | "shield-check"
+  | "lock-secure"
+  | "role-access"
+  | "file-confidential"
+  | "cloud-secure"
+  | "audit-trail"
+  | "healthcare-data"
+  | "hospital-workflow"
+  | "graduation-cap";
 
 interface AmaraIconProps extends SVGProps<SVGSVGElement> {
   name: AmaraIconName;
@@ -322,6 +331,70 @@ const ICONS: Record<AmaraIconName, ReactNode> = {
       <circle cx="18" cy="8" r="2.5" />
       <circle cx="12" cy="16" r="2.5" />
       <path d="M7.8 9.5 10.5 14M16.2 9.5 13.5 14M8.5 8h7" />
+    </>
+  ),
+  "shield-check": (
+    <>
+      <path d="M12 3 19 6v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z" />
+      <path d="M9 12l2 2 4-4" />
+    </>
+  ),
+  "lock-secure": (
+    <>
+      <rect x="5" y="11" width="14" height="10" rx="2" />
+      <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+      <circle cx="12" cy="16" r="1.25" fill="currentColor" stroke="none" />
+    </>
+  ),
+  "role-access": (
+    <>
+      <circle cx="9" cy="8" r="3" />
+      <path d="M4 19v-1.5a4 4 0 0 1 4-4h2" />
+      <path d="M16 11v6M13 14h6" />
+      <circle cx="17" cy="8" r="2.5" />
+    </>
+  ),
+  "file-confidential": (
+    <>
+      <path d="M7 4h7l3 3v13H7V4Z" />
+      <path d="M14 4v4h4" />
+      <path d="M9 13h6M9 17h4" />
+      <circle cx="12" cy="10" r="1" fill="currentColor" stroke="none" />
+    </>
+  ),
+  "cloud-secure": (
+    <>
+      <path d="M7 18h10a4 4 0 0 0 .5-8 5.5 5.5 0 0 0-10.6 1.8A3.5 3.5 0 0 0 7 18Z" />
+      <path d="M12 12v4M10.5 14h3" />
+    </>
+  ),
+  "audit-trail": (
+    <>
+      <path d="M8 6h8M8 10h8M8 14h5" />
+      <rect x="4" y="4" width="16" height="16" rx="2" />
+      <path d="M16 14l2 2 4-4" />
+    </>
+  ),
+  "healthcare-data": (
+    <>
+      <path d="M4 19V5" />
+      <path d="M4 19h16" />
+      <path d="M8 15l3-4 3 2 4-6" />
+      <path d="M12 3v4M10 5h4" />
+    </>
+  ),
+  "hospital-workflow": (
+    <>
+      <path d="M10 5h4v3h3v11H7V8h3V5Z" />
+      <path d="M10 12h4M10 16h4" />
+      <path d="M12 3v2" />
+    </>
+  ),
+  "graduation-cap": (
+    <>
+      <path d="M12 3 2 8l10 5 10-5-10-5Z" />
+      <path d="M6 10v4c0 2 2.7 4 6 4s6-2 6-4v-4" />
+      <path d="M22 8v6" />
     </>
   ),
 };

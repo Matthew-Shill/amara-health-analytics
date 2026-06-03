@@ -148,10 +148,41 @@ body {
 
 .section-tone-teal {
   background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--amara-smoked-teal) 9%, var(--amara-pearl)) 0%,
-    var(--amara-pearl) 70%
+    175deg,
+    color-mix(in srgb, var(--amara-smoked-teal) 16%, var(--amara-pearl)) 0%,
+    color-mix(in srgb, var(--amara-smoked-teal) 8%, var(--amara-pearl)) 45%,
+    var(--amara-pearl) 100%
   );
+}
+
+.section-tone-teal-rich {
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--amara-smoked-teal) 26%, var(--amara-pearl)) 0%,
+    color-mix(in srgb, var(--amara-smoked-teal) 14%, var(--amara-pearl)) 55%,
+    color-mix(in srgb, white 30%, var(--amara-pearl)) 100%
+  );
+}
+
+.section-tone-teal .ambient-mesh,
+.section-tone-teal-rich .ambient-mesh {
+  opacity: 1;
+  background-image:
+    radial-gradient(
+      circle at 12% 18%,
+      color-mix(in srgb, var(--amara-smoked-teal) 22%, transparent) 0%,
+      transparent 48%
+    ),
+    radial-gradient(
+      circle at 88% 75%,
+      color-mix(in srgb, var(--amara-nude-stone) 24%, transparent) 0%,
+      transparent 42%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      color-mix(in srgb, var(--amara-smoked-teal) 12%, transparent) 0%,
+      transparent 55%
+    );
 }
 
 .section-tone-contrast {
@@ -482,4 +513,77 @@ body {
 
 .container-wide {
   @apply mx-auto max-w-7xl;
+}
+
+.verified-trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: color-mix(in srgb, var(--amara-espresso) 70%, white);
+}
+
+.verified-trust-badge__mark {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 1.375rem;
+  height: 1.375rem;
+  border-radius: 9999px;
+  color: var(--amara-smoked-teal);
+  background: color-mix(in srgb, var(--amara-smoked-teal) 9%, white);
+}
+
+.trust-badge {
+  border-radius: 0.875rem;
+  border: 1px solid color-mix(in srgb, var(--amara-nude-stone) 45%, transparent);
+  background: color-mix(in srgb, white 82%, var(--amara-pearl));
+  box-shadow: 0 6px 20px -10px color-mix(in srgb, var(--amara-espresso) 12%, transparent);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.trust-badge:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--amara-smoked-teal) 35%, transparent);
+  box-shadow: 0 10px 28px -12px color-mix(in srgb, var(--amara-smoked-teal) 22%, transparent);
+}
+
+.trust-pill {
+  border-radius: 9999px;
+  border: 1px solid color-mix(in srgb, var(--amara-nude-stone) 50%, transparent);
+  background: color-mix(in srgb, white 75%, var(--amara-pearl));
+  box-shadow: 0 4px 16px -8px color-mix(in srgb, var(--amara-espresso) 10%, transparent);
+}
+
+.compliance-status {
+  border-radius: 9999px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+}
+
+.compliance-status-in-progress {
+  background: color-mix(in srgb, var(--amara-smoked-teal) 14%, white);
+  color: var(--amara-smoked-teal);
+  border: 1px solid color-mix(in srgb, var(--amara-smoked-teal) 28%, transparent);
+}
+
+.compliance-status-planned {
+  background: color-mix(in srgb, var(--amara-nude-stone) 22%, white);
+  color: color-mix(in srgb, var(--amara-espresso) 75%, white);
+  border: 1px solid color-mix(in srgb, var(--amara-nude-stone) 45%, transparent);
+}
+
+.compliance-status-future {
+  background: color-mix(in srgb, white 70%, var(--amara-pearl));
+  color: color-mix(in srgb, var(--amara-espresso) 55%, white);
+  border: 1px solid color-mix(in srgb, var(--amara-nude-stone) 35%, transparent);
 }

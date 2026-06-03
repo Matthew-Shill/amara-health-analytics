@@ -1,4 +1,5 @@
 import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
+import { Link } from "react-router-dom";
 
 type Variant = "primary" | "secondary" | "ghost";
 
@@ -28,6 +29,10 @@ type ButtonAsButton = CommonProps &
 
 type ButtonProps = ButtonAsLink | ButtonAsButton;
 
+function isClientRoute(href: string) {
+  return href.startsWith("/") && !href.startsWith("//");
+}
+
 export function Button({
   variant = "primary",
   href,
@@ -38,6 +43,15 @@ export function Button({
   const classes = `${base} ${variants[variant]} ${className}`;
 
   if (href) {
+    if (isClientRoute(href)) {
+      const anchorProps = props as Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href">;
+      return (
+        <Link to={href} className={classes} {...anchorProps}>
+          {children}
+        </Link>
+      );
+    }
+
     const anchorProps = props as AnchorHTMLAttributes<HTMLAnchorElement>;
     return (
       <a href={href} className={classes} {...anchorProps}>

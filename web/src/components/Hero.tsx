@@ -1,16 +1,10 @@
-import { MISSION, TAGLINE } from "@/lib/brand";
 import { HeroDashboard } from "@/components/dashboard/HeroDashboard";
+import { HeroTrustStrip } from "@/components/trust/HeroTrustStrip";
 import { Button } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { MISSION, TAGLINE } from "@/lib/brand";
 
 const heroTagline = TAGLINE;
-
-const focusAreas = [
-  "Profit Clarity",
-  "Retention Visibility",
-  "Inventory Clarity",
-  "Growth Insights",
-];
 
 export function Hero() {
   return (
@@ -53,20 +47,14 @@ export function Hero() {
               and clients backed by data.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-3">
-              {focusAreas.map((label) => (
-                <div key={label} className="stat-chip">
-                  {label}
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-wrap gap-4">
               <Button href="#contact">Book a Consultation</Button>
               <Button href="#demo-work" variant="secondary">
                 Explore Demo Work
               </Button>
             </div>
+
+            <HeroTrustStrip />
           </div>
 
           <div

@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { DEMOS } from "@/lib/content";
 import { DemoPreview } from "@/components/dashboard/DemoPreview";
+import { DashboardTrustCallout } from "@/components/trust/DashboardTrustCallout";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -140,7 +141,9 @@ function DemoShowcase() {
           </div>
 
           <div className="flex flex-col p-6 sm:p-7 lg:p-8">
-            <div className="flex flex-1 flex-col gap-5 text-sm">
+            <DashboardTrustCallout />
+
+            <div className="mt-6 flex flex-1 flex-col gap-5 text-sm">
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-wider text-smoked-teal">
                   Problem solved
@@ -207,12 +210,12 @@ function DemoShowcase() {
 
 export function DemoWorkSection() {
   return (
-    <SectionBackdropWide id="demo-work" tone="default" motif>
+    <SectionBackdropWide id="demo-work" tone="teal-rich" motif>
       <Reveal>
         <SectionHeading
           eyebrow="Demo work"
           title="See what clarity can look like."
-          subtitle="Walk through real business questions Amara answers — one focused view at a time, with the metrics and decisions leaders need."
+          subtitle="Examples of the insights Amara can deliver. From retention risk and inventory waste, to profitability and executive decision support — Amara provides clarity to businesses."
         />
       </Reveal>
 

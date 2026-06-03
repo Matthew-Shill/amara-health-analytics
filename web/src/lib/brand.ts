@@ -1,7 +1,6 @@
 export const COMPANY_NAME = "Amara Health Analytics";
 export const TAGLINE = "Have Your AHA Moment";
-export const MISSION =
-  "Discover the profit, retention, and growth opportunities hiding in your business.";
+export const MISSION = "Don't be the business with wasted data.";
 
 /** Primary web paths — SVG for crisp scaling. PNG copies live alongside in assets/ for export/print. */
 export const LOGO = {
@@ -14,11 +13,12 @@ export const LOGO = {
 } as const;
 
 export const NAV_LINKS = [
-  { label: "Services", href: "#services" },
-  { label: "Demo Work", href: "#demo-work" },
-  { label: "Who We Help", href: "#who-we-help" },
-  { label: "Process", href: "#process" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/#services" },
+  { label: "Demo Work", href: "/#demo-work" },
+  { label: "Who We Help", href: "/#who-we-help" },
+  { label: "Process", href: "/#process" },
+  { label: "About", href: "/about" },
+  { label: "Privacy", href: "/#privacy-security" },
 ] as const;
 
 export const ORGANIZATION_TYPES = [

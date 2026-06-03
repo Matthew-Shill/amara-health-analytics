@@ -58,7 +58,7 @@ export function NeedsEvaluator() {
   };
 
   return (
-    <section id="evaluator" className="section-pad section-tone-teal relative overflow-hidden">
+    <section id="evaluator" className="section-pad section-tone-teal-rich relative overflow-hidden">
       <div className="ambient-mesh pointer-events-none absolute inset-0" aria-hidden />
       <div className="container-narrow relative z-10">
         <Reveal>
