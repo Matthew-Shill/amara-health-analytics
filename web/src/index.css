@@ -516,6 +516,37 @@ body {
   @apply mx-auto max-w-7xl;
 }
 
+/* Brand mark icon — locked dimensions override Tailwind preflight max-width: 100% on img */
+.brand-mark-icon {
+  display: block;
+  flex-shrink: 0;
+  object-fit: contain;
+  width: var(--brand-icon-size);
+  height: var(--brand-icon-size);
+  min-width: var(--brand-icon-size);
+  max-width: var(--brand-icon-size);
+}
+
+.brand-mark-icon--compact {
+  --brand-icon-size: 2.5rem;
+}
+
+.brand-mark-icon--comfortable {
+  --brand-icon-size: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .brand-mark-icon--comfortable {
+    --brand-icon-size: 3.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .brand-mark-icon--comfortable {
+    --brand-icon-size: 4rem;
+  }
+}
+
 .verified-trust-badge {
   display: inline-flex;
   align-items: center;

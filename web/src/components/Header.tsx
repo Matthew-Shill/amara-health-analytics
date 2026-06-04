@@ -36,7 +36,7 @@ export function Header() {
               aria-label={`${COMPANY_NAME} home`}
               onClick={closeMenu}
             >
-              <BrandMark variant="header" />
+              <BrandMark layout="compact" />
             </Link>
 
             <nav className="hidden items-center gap-9 lg:flex" aria-label="Primary">

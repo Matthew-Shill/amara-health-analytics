@@ -19,10 +19,10 @@ export function Footer() {
         <div>
           <Link
             to="/"
-            className="inline-block transition-opacity hover:opacity-90"
+            className="inline-block min-w-0 max-w-full transition-opacity hover:opacity-90"
             aria-label={`${COMPANY_NAME} home`}
           >
-            <BrandMark />
+            <BrandMark layout="comfortable" />
           </Link>
           <p
             className="mt-5 text-3xl text-smoked-teal"

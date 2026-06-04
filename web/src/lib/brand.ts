@@ -10,8 +10,10 @@ export const LOGO = {
   iconStone: "/logos/icon/AHA Icon Stone.svg",
   iconTeal: "/logos/icon/AHA Icon Teal.svg",
   iconEspresso: "/logos/icon/AHA Icon Espresso.svg",
-  /** PNG icons render more reliably on mobile Safari than embedded-raster SVGs. */
+  /** PNG icons — preferred for in-app UI; SVGs embed rasters that break on mobile Safari. */
+  iconStonePng: "/logos/icon/AHA Icon Stone.png",
   iconTealPng: "/logos/icon/AHA Icon Teal.png",
+  iconEspressoPng: "/logos/icon/AHA Icon Espresso.png",
 } as const;
 
 export const NAV_LINKS = [
