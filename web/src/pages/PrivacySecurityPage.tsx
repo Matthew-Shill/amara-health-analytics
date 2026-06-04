@@ -12,14 +12,14 @@ import {
   PRIVACY_SECURITY_CARDS,
   TRAINING_BADGES,
 } from "@/lib/trust-content";
-import { AmaraIcon } from "@/components/ui/icons/AmaraIcon";
+import { AmilaIcon } from "@/components/ui/icons/AmilaIcon";
 
-const PAGE_TITLE = "Privacy & Security | Amara Health Analytics";
+const PAGE_TITLE = "Privacy & Security | Amila Health Analytics";
 const PAGE_DESCRIPTION =
-  "Learn how Amara Health Analytics approaches HIPAA-conscious PHI handling, secure data workflows, and a long-term compliance roadmap for healthcare analytics.";
+  "Learn how Amila Health Analytics approaches HIPAA-conscious PHI handling, secure data workflows, and a long-term compliance roadmap for healthcare analytics.";
 
 const OVERVIEW =
-  "Amara Health Analytics is built for healthcare, wellness, and aesthetic organizations that need actionable insights from sensitive operational and patient data. We design our analytics practice around privacy-conscious workflows, secure handling principles, and HIPAA-aligned practices — without overpromising certification or compliance status we have not yet achieved.";
+  "Amila Health Analytics is built for healthcare, wellness, and aesthetic organizations that need actionable insights from sensitive operational and patient data. We design our analytics practice around privacy-conscious workflows, secure handling principles, and HIPAA-aligned practices — without overpromising certification or compliance status we have not yet achieved.";
 
 const PHI_PHILOSOPHY = [
   "Protected health information is treated as confidential by default.",
@@ -54,11 +54,11 @@ export function PrivacySecurityPage() {
     }
 
     return () => {
-      document.title = "Amara Health Analytics | Have Your AHA Moment";
+      document.title = "Amila Health Analytics | Have Your AHA Moment";
       if (meta) {
         meta.setAttribute(
           "content",
-          "Amara Health Analytics helps healthcare and wellness organizations uncover profit, retention, inventory, and growth opportunities hidden in their data.",
+          "Amila Health Analytics helps healthcare and wellness organizations uncover profit, retention, inventory, and growth opportunities hidden in their data.",
         );
       }
     };
@@ -77,7 +77,7 @@ export function PrivacySecurityPage() {
           <div className="container-narrow relative z-10">
             <Reveal>
               <div className="mx-auto max-w-3xl text-center">
-                <p className="text-xs font-semibold uppercase tracking-[var(--amara-tracking-wide)] text-smoked-teal">
+                <p className="text-xs font-semibold uppercase tracking-[var(--amila-tracking-wide)] text-smoked-teal">
                   Privacy & security
                 </p>
                 <h1 className="mt-5 font-headline text-4xl font-semibold leading-[1.1] heading-accent sm:text-5xl lg:text-[3.25rem]">
@@ -87,7 +87,7 @@ export function PrivacySecurityPage() {
                   className="mx-auto mt-5 block h-1 w-16 rounded-full bg-gradient-to-r from-nude-stone via-smoked-teal to-transparent"
                   aria-hidden
                 />
-                <p className="mt-6 text-base leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_78%,white)] sm:text-lg">
+                <p className="mt-6 text-base leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_78%,white)] sm:text-lg">
                   Privacy and security safeguards for healthcare data — designed to support
                   HIPAA-aligned workflows and Business Associate responsibilities.
                 </p>
@@ -101,8 +101,8 @@ export function PrivacySecurityPage() {
             <SectionHeading eyebrow="Overview" title="Our Commitment to Trust" align="left" />
           </Reveal>
           <Reveal delay={1}>
-            <div className="rounded-3xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_35%,transparent)] bg-white/60 p-7 shadow-[0_20px_50px_-24px_rgba(75,52,43,0.12)] lg:p-9">
-              <p className="text-base leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_80%,white)] sm:text-lg">
+            <div className="rounded-3xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/60 p-7 shadow-[0_20px_50px_-24px_rgba(75,52,43,0.12)] lg:p-9">
+              <p className="text-base leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_80%,white)] sm:text-lg">
                 {OVERVIEW}
               </p>
             </div>
@@ -120,8 +120,8 @@ export function PrivacySecurityPage() {
           <ul className="grid gap-4 sm:grid-cols-2">
             {PHI_PHILOSOPHY.map((item, i) => (
               <Reveal key={item} delay={(i % 4) as 0 | 1 | 2 | 3}>
-                <li className="trust-badge flex gap-3 p-5 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_78%,white)]">
-                  <AmaraIcon name="shield-check" className="mt-0.5 h-5 w-5 shrink-0 text-smoked-teal" />
+                <li className="trust-badge flex gap-3 p-5 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_78%,white)]">
+                  <AmilaIcon name="shield-check" className="mt-0.5 h-5 w-5 shrink-0 text-smoked-teal" />
                   {item}
                 </li>
               </Reveal>
@@ -142,9 +142,9 @@ export function PrivacySecurityPage() {
                   {TECHNICAL_SAFEGUARDS.map((item) => (
                     <li
                       key={item}
-                      className="flex gap-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_75%,white)]"
+                      className="flex gap-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_75%,white)]"
                     >
-                      <AmaraIcon name="lock-secure" className="mt-0.5 h-4 w-4 shrink-0 text-smoked-teal" />
+                      <AmilaIcon name="lock-secure" className="mt-0.5 h-4 w-4 shrink-0 text-smoked-teal" />
                       {item}
                     </li>
                   ))}
@@ -162,9 +162,9 @@ export function PrivacySecurityPage() {
                   {ADMINISTRATIVE_SAFEGUARDS.map((item) => (
                     <li
                       key={item}
-                      className="flex gap-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_75%,white)]"
+                      className="flex gap-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_75%,white)]"
                     >
-                      <AmaraIcon name="file-confidential" className="mt-0.5 h-4 w-4 shrink-0 text-smoked-teal" />
+                      <AmilaIcon name="file-confidential" className="mt-0.5 h-4 w-4 shrink-0 text-smoked-teal" />
                       {item}
                     </li>
                   ))}
@@ -185,11 +185,11 @@ export function PrivacySecurityPage() {
             {PRIVACY_SECURITY_CARDS.map((card, i) => (
               <Reveal key={card.title} delay={(i % 4) as 0 | 1 | 2 | 3}>
                 <article className="trust-badge h-full p-6">
-                  <AmaraIcon name={card.icon} className="h-5 w-5 text-smoked-teal" />
+                  <AmilaIcon name={card.icon} className="h-5 w-5 text-smoked-teal" />
                   <h3 className="mt-4 font-headline text-lg font-semibold text-espresso">
                     {card.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_72%,white)]">
+                  <p className="mt-2 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_72%,white)]">
                     {card.description}
                   </p>
                 </article>
@@ -210,7 +210,7 @@ export function PrivacySecurityPage() {
             {TRAINING_BADGES.map((badge, i) => (
               <Reveal key={badge.label} delay={(i % 4) as 0 | 1 | 2 | 3}>
                 <span className="trust-pill inline-flex items-center gap-2 px-4 py-2.5 text-xs font-semibold text-espresso sm:text-sm">
-                  <AmaraIcon name={badge.icon} className="h-4 w-4 shrink-0 text-smoked-teal" />
+                  <AmilaIcon name={badge.icon} className="h-4 w-4 shrink-0 text-smoked-teal" />
                   {badge.label}
                 </span>
               </Reveal>
@@ -223,7 +223,7 @@ export function PrivacySecurityPage() {
         <section className="section-pad">
           <div className="container-narrow">
             <Reveal>
-              <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-espresso via-[color-mix(in_srgb,var(--amara-espresso)_90%,var(--amara-smoked-teal))] to-smoked-teal px-8 py-16 text-center sm:px-14 lg:py-24">
+              <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-espresso via-[color-mix(in_srgb,var(--amila-espresso)_90%,var(--amila-smoked-teal))] to-smoked-teal px-8 py-16 text-center sm:px-14 lg:py-24">
                 <BrandMotif
                   className="absolute -left-4 top-1/2 h-48 w-48 -translate-y-1/2 opacity-[0.12]"
                   opacity={0.12}
@@ -239,17 +239,17 @@ export function PrivacySecurityPage() {
                 <h2 className="relative font-headline text-3xl font-semibold leading-tight text-pearl sm:text-4xl">
                   Questions About Privacy & Security?
                 </h2>
-                <p className="relative mx-auto mt-6 max-w-lg text-base leading-relaxed text-[color-mix(in_srgb,var(--amara-pearl)_88%,white)]">
+                <p className="relative mx-auto mt-6 max-w-lg text-base leading-relaxed text-[color-mix(in_srgb,var(--amila-pearl)_88%,white)]">
                   We are committed to transparent conversations about data handling, Business
-                  Associate responsibilities, and how Amara can support your organization&apos;s
+                  Associate responsibilities, and how Amila can support your organization&apos;s
                   privacy requirements.
                 </p>
                 <div className="relative mt-10 flex flex-wrap justify-center gap-4">
                   <Button
                     href="/#contact"
-                    className="!from-pearl !to-[color-mix(in_srgb,var(--amara-pearl)_92%,white)] !text-espresso !shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] hover:!scale-[1.04]"
+                    className="!from-pearl !to-[color-mix(in_srgb,var(--amila-pearl)_92%,white)] !text-espresso !shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] hover:!scale-[1.04]"
                   >
-                    Contact Amara
+                    Contact Amila
                   </Button>
                   <Button href="/" variant="secondary">
                     Back to Home

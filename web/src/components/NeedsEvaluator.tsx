@@ -10,7 +10,7 @@ function getResult(yesCount: number) {
     return {
       tier: "low",
       title: "Significant blind spots may exist",
-      body: "You may be operating with significant blind spots. Amara can help uncover hidden opportunities in your data.",
+      body: "You may be operating with significant blind spots. Amila can help uncover hidden opportunities in your data.",
     };
   }
   if (yesCount <= 4) {
@@ -23,7 +23,7 @@ function getResult(yesCount: number) {
   return {
     tier: "high",
     title: "Strong foundation, room to refine",
-    body: "You have a strong foundation. Amara can help refine your reporting and insight layer with forecasting, thoughtful AI support, and executive summaries.",
+    body: "You have a strong foundation. Amila can help refine your reporting and insight layer with forecasting, thoughtful AI support, and executive summaries.",
   };
 }
 
@@ -78,7 +78,7 @@ export function NeedsEvaluator() {
                   </span>
                   <span>{Math.round((answered / EVALUATOR_QUESTIONS.length) * 100)}%</span>
                 </div>
-                <div className="mb-8 h-2 overflow-hidden rounded-full bg-[color-mix(in_srgb,var(--amara-nude-stone)_35%,white)]">
+                <div className="mb-8 h-2 overflow-hidden rounded-full bg-[color-mix(in_srgb,var(--amila-nude-stone)_35%,white)]">
                   <div
                     className="h-full rounded-full bg-gradient-to-r from-nude-stone via-smoked-teal to-smoked-teal transition-all duration-500 shadow-sm"
                     style={{
@@ -103,7 +103,7 @@ export function NeedsEvaluator() {
                   <button
                     type="button"
                     onClick={() => setAnswer(false)}
-                    className="rounded-full border border-[color-mix(in_srgb,var(--amara-espresso)_25%,transparent)] px-8 py-3 text-sm font-semibold text-espresso transition-colors hover:border-smoked-teal hover:text-smoked-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-smoked-teal"
+                    className="rounded-full border border-[color-mix(in_srgb,var(--amila-espresso)_25%,transparent)] px-8 py-3 text-sm font-semibold text-espresso transition-colors hover:border-smoked-teal hover:text-smoked-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-smoked-teal"
                   >
                     No
                   </button>
@@ -128,7 +128,7 @@ export function NeedsEvaluator() {
                   Your score: {yesCount} of {EVALUATOR_QUESTIONS.length} yes
                 </p>
                 <p className="mt-4 font-headline text-2xl text-espresso">{result.title}</p>
-                <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_78%,white)]">
+                <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_78%,white)]">
                   {result.body}
                 </p>
                 <div className="mt-8 flex flex-wrap justify-center gap-4">

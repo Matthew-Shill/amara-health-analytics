@@ -8,7 +8,7 @@ Single source of truth for logos, icons, fonts, and brand reference files. The w
 assets/
 ├── brand/              # Brand board, tokens (tokens.css, tokens.json)
 ├── logos/
-│   ├── full/           # Full wordmark (AMARA + tagline)
+│   ├── full/           # Full wordmark (AMILA + tagline)
 │   ├── icon/           # AHA lotus mark only
 │   └── reverse/        # White/light logos for dark backgrounds (optional)
 ├── icons/              # UI line icons (analytics, growth, etc.) — PNG or SVG
@@ -19,7 +19,7 @@ assets/
 ## Logos (`logos/`)
 
 ### `logos/full/`
-Full **Amara Health Analytics** wordmark files.
+Full **Amila Health Analytics** wordmark files.
 
 **Naming (match exactly for the website):**
 
@@ -77,4 +77,4 @@ That copies required logos (and fonts) into `web/public/` for local dev and prod
 
 - Colors & type: `brand/tokens.css`, `brand/tokens.json`
 - Guidelines: `docs/brand-guidelines.md` (if present)
-- Brand board: `brand/Amara Brand Board.png` (if present)
+- Brand board: `brand/Amila Brand Board.png` (if present)

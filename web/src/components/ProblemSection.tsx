@@ -1,5 +1,5 @@
 import { PROBLEMS } from "@/lib/content";
-import { AmaraIcon, PROBLEM_ICONS } from "@/components/ui/icons/AmaraIcon";
+import { AmilaIcon, PROBLEM_ICONS } from "@/components/ui/icons/AmilaIcon";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionBackdropWide } from "@/components/ui/SectionBackdrop";
@@ -30,19 +30,19 @@ export function ProblemSection() {
               }`}
             >
               <span
-                className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[color-mix(in_srgb,var(--amara-smoked-teal)_10%,white)] ring-1 ring-[color-mix(in_srgb,var(--amara-smoked-teal)_18%,transparent)]"
+                className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[color-mix(in_srgb,var(--amila-smoked-teal)_10%,white)] ring-1 ring-[color-mix(in_srgb,var(--amila-smoked-teal)_18%,transparent)]"
                 aria-hidden
               >
-                <AmaraIcon
+                <AmilaIcon
                   name={PROBLEM_ICONS[i]}
-                  className="h-7 w-7 text-smoked-teal transition-colors group-hover:text-[color-mix(in_srgb,var(--amara-smoked-teal)_80%,var(--amara-espresso))]"
+                  className="h-7 w-7 text-smoked-teal transition-colors group-hover:text-[color-mix(in_srgb,var(--amila-smoked-teal)_80%,var(--amila-espresso))]"
                 />
               </span>
               <div className={i === 0 ? "lg:flex-1" : ""}>
                 <h3 className="font-headline text-xl font-semibold text-espresso transition-colors group-hover:text-smoked-teal sm:text-2xl">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_72%,white)] sm:text-base">
+                <p className="mt-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_72%,white)] sm:text-base">
                   {item.description}
                 </p>
               </div>

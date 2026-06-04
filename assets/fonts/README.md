@@ -1,10 +1,10 @@
 # Brand fonts
 
-Self-hosted files for the Amara type system (see `assets/brand/Amara Brand Board.png`).
+Self-hosted files for the Amila type system (see `assets/brand/Amila Brand Board.png`).
 
 | Role | Family | Weights | Use |
 |------|--------|---------|-----|
-| Headlines | Playfair Display | 400, 500, 600, 700 | Page titles, **AMARA** wordmark style |
+| Headlines | Playfair Display | 400, 500, 600, 700 | Page titles, **AMILA** wordmark style |
 | Body | Montserrat | 400, 500, 600, 700 | UI, labels, **HEALTH ANALYTICS** subheads |
 | Slogan | Allura | 400 | “Have Your *AHA* Moment” accent line |
 
@@ -15,17 +15,17 @@ Self-hosted files for the Amara type system (see `assets/brand/Amara Brand Board
 @import "./fonts.css";
 
 h1 {
-  font-family: var(--amara-font-headline);
+  font-family: var(--amila-font-headline);
   font-weight: 600;
 }
 
 body {
-  font-family: var(--amara-font-body);
+  font-family: var(--amila-font-body);
   font-weight: 400;
 }
 
 .tagline {
-  font-family: var(--amara-font-slogan);
+  font-family: var(--amila-font-slogan);
   font-size: 1.5rem;
 }
 ```
@@ -34,9 +34,9 @@ For Montserrat subheads (e.g. **HEALTH ANALYTICS**), use wide letter-spacing:
 
 ```css
 .subhead {
-  font-family: var(--amara-font-body);
+  font-family: var(--amila-font-body);
   font-weight: 500;
-  letter-spacing: var(--amara-tracking-wide);
+  letter-spacing: var(--amila-tracking-wide);
   text-transform: uppercase;
 }
 ```

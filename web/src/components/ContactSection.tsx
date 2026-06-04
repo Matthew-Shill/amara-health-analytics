@@ -99,10 +99,10 @@ export function ContactSection() {
   ) => {
     const id = `contact-${key}`;
     const common =
-      "mt-2 w-full rounded-xl border bg-white/70 px-4 py-3 text-sm text-espresso transition-colors focus:border-smoked-teal focus:outline-none focus:ring-2 focus:ring-[color-mix(in_srgb,var(--amara-smoked-teal)_25%,transparent)]";
+      "mt-2 w-full rounded-xl border bg-white/70 px-4 py-3 text-sm text-espresso transition-colors focus:border-smoked-teal focus:outline-none focus:ring-2 focus:ring-[color-mix(in_srgb,var(--amila-smoked-teal)_25%,transparent)]";
     const border = errors[key]
       ? "border-red-400/80"
-      : "border-[color-mix(in_srgb,var(--amara-nude-stone)_50%,transparent)]";
+      : "border-[color-mix(in_srgb,var(--amila-nude-stone)_50%,transparent)]";
     const selectOptions =
       opts?.selectOptions ??
       (key === "organizationType" ? ORGANIZATION_TYPES : []);
@@ -119,7 +119,7 @@ export function ContactSection() {
           )}
         </label>
         {opts?.hint && (
-          <p className="mt-1 text-xs text-[color-mix(in_srgb,var(--amara-espresso)_65%,white)]">
+          <p className="mt-1 text-xs text-[color-mix(in_srgb,var(--amila-espresso)_65%,white)]">
             {opts.hint}
           </p>
         )}
@@ -192,7 +192,7 @@ export function ContactSection() {
               role="status"
             >
               <p className="font-headline text-2xl text-espresso">Thank you.</p>
-              <p className="mt-3 text-sm text-[color-mix(in_srgb,var(--amara-espresso)_75%,white)]">
+              <p className="mt-3 text-sm text-[color-mix(in_srgb,var(--amila-espresso)_75%,white)]">
                 Your inquiry has been received. We will be in touch shortly.
               </p>
               <Button className="mt-8" variant="secondary" onClick={() => setStatus("idle")}>

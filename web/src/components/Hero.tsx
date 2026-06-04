@@ -29,8 +29,8 @@ export function Hero() {
             <h1 className="font-headline text-[2.65rem] font-semibold leading-[1.06] text-espresso sm:text-5xl lg:text-[3.5rem]">
               {heroTagline.replace("AHA Moment", "").trim()}{" "}
               <span
-                className="block sm:inline bg-gradient-to-r from-smoked-teal to-[color-mix(in_srgb,var(--amara-nude-stone)_90%,var(--amara-smoked-teal))] bg-clip-text text-transparent"
-                style={{ fontFamily: "var(--amara-font-slogan)", fontWeight: 400, fontSize: "1.15em" }}
+                className="block sm:inline bg-gradient-to-r from-smoked-teal to-[color-mix(in_srgb,var(--amila-nude-stone)_90%,var(--amila-smoked-teal))] bg-clip-text text-transparent"
+                style={{ fontFamily: "var(--amila-font-slogan)", fontWeight: 400, fontSize: "1.15em" }}
               >
                 AHA Moment
               </span>
@@ -40,8 +40,8 @@ export function Hero() {
               {MISSION}
             </p>
 
-            <p className="mt-5 text-base leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_78%,white)] sm:text-lg">
-              Amara Health Analytics helps businesses uncover opportunities lost in the platforms
+            <p className="mt-5 text-base leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_78%,white)] sm:text-lg">
+              Amila Health Analytics helps businesses uncover opportunities lost in the platforms
               they use. We curate cohesive reports that improve operations. Fostering better
               experiences for providers and clients backed by data.
             </p>
@@ -65,8 +65,8 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative z-10 border-t border-[color-mix(in_srgb,var(--amara-nude-stone)_40%,transparent)] bg-[color-mix(in_srgb,white_50%,var(--amara-pearl))]">
-        <div className="container-wide flex flex-wrap items-center justify-center gap-x-10 gap-y-3 px-5 py-4 text-center text-xs font-semibold uppercase tracking-[0.14em] text-[color-mix(in_srgb,var(--amara-espresso)_55%,white)] sm:justify-between sm:px-8 sm:text-left lg:px-12">
+      <div className="relative z-10 border-t border-[color-mix(in_srgb,var(--amila-nude-stone)_40%,transparent)] bg-[color-mix(in_srgb,white_50%,var(--amila-pearl))]">
+        <div className="container-wide flex flex-wrap items-center justify-center gap-x-10 gap-y-3 px-5 py-4 text-center text-xs font-semibold uppercase tracking-[0.14em] text-[color-mix(in_srgb,var(--amila-espresso)_55%,white)] sm:justify-between sm:px-8 sm:text-left lg:px-12">
           <span>
             <span className="keyword-emphasis">Revenue</span> clarity
           </span>

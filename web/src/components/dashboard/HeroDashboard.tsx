@@ -46,7 +46,7 @@ export function HeroDashboard() {
         opacity={0.05}
       />
       <div className="glass-panel-strong relative overflow-hidden rounded-3xl p-5 sm:p-6 lg:p-8">
-        <div className="mb-6 flex items-center justify-between border-b border-[color-mix(in_srgb,var(--amara-nude-stone)_40%,transparent)] pb-4">
+        <div className="mb-6 flex items-center justify-between border-b border-[color-mix(in_srgb,var(--amila-nude-stone)_40%,transparent)] pb-4">
           <div>
             <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-smoked-teal">
               Executive Overview
@@ -55,7 +55,7 @@ export function HeroDashboard() {
               Business Visibility
             </p>
           </div>
-          <div className="flex items-center gap-2 rounded-full bg-[color-mix(in_srgb,var(--amara-smoked-teal)_15%,white)] px-3 py-1.5 ring-1 ring-[color-mix(in_srgb,var(--amara-smoked-teal)_25%,transparent)]">
+          <div className="flex items-center gap-2 rounded-full bg-[color-mix(in_srgb,var(--amila-smoked-teal)_15%,white)] px-3 py-1.5 ring-1 ring-[color-mix(in_srgb,var(--amila-smoked-teal)_25%,transparent)]">
             <span className="h-2 w-2 animate-pulse-soft rounded-full bg-smoked-teal" />
             <span className="text-xs font-semibold text-smoked-teal">Live</span>
           </div>
@@ -67,7 +67,7 @@ export function HeroDashboard() {
               <p className="text-sm font-medium text-espresso">Performance Index</p>
               <p className="font-headline text-2xl text-smoked-teal">+14.8%</p>
             </div>
-            <div className="h-36 rounded-xl bg-[color-mix(in_srgb,white_60%,var(--amara-pearl))] p-3 sm:h-44">
+            <div className="h-36 rounded-xl bg-[color-mix(in_srgb,white_60%,var(--amila-pearl))] p-3 sm:h-44">
               <MiniChart />
             </div>
           </div>
@@ -76,9 +76,9 @@ export function HeroDashboard() {
             {metrics.slice(0, 4).map((m) => (
               <div
                 key={m.label}
-                className="rounded-xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_35%,transparent)] bg-white/50 p-3"
+                className="rounded-xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/50 p-3"
               >
-                <p className="text-[11px] font-medium text-[color-mix(in_srgb,var(--amara-espresso)_65%,white)]">
+                <p className="text-[11px] font-medium text-[color-mix(in_srgb,var(--amila-espresso)_65%,white)]">
                   {m.label}
                 </p>
                 <p className="mt-1 font-headline text-lg text-espresso">{m.value}</p>
@@ -97,15 +97,15 @@ export function HeroDashboard() {
           {metrics.slice(4).map((m) => (
             <div
               key={m.label}
-              className="rounded-xl bg-[color-mix(in_srgb,var(--amara-nude-stone)_18%,white)] px-4 py-3"
+              className="rounded-xl bg-[color-mix(in_srgb,var(--amila-nude-stone)_18%,white)] px-4 py-3"
             >
-              <p className="text-[11px] text-[color-mix(in_srgb,var(--amara-espresso)_70%,white)]">
+              <p className="text-[11px] text-[color-mix(in_srgb,var(--amila-espresso)_70%,white)]">
                 {m.label}
               </p>
               <p className="font-headline text-base text-espresso">{m.value}</p>
             </div>
           ))}
-          <div className="col-span-2 rounded-xl border border-dashed border-[color-mix(in_srgb,var(--amara-smoked-teal)_30%,transparent)] px-4 py-3 sm:col-span-1">
+          <div className="col-span-2 rounded-xl border border-dashed border-[color-mix(in_srgb,var(--amila-smoked-teal)_30%,transparent)] px-4 py-3 sm:col-span-1">
             <p className="text-[11px] font-semibold uppercase tracking-wider text-smoked-teal">
               Insight
             </p>

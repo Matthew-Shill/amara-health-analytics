@@ -25,8 +25,8 @@ export function Header() {
         <div
           className={`transition-all duration-500 ${
             scrolled
-              ? "border-b border-[color-mix(in_srgb,var(--amara-nude-stone)_45%,transparent)] bg-[color-mix(in_srgb,var(--amara-pearl)_90%,white)] shadow-[0_12px_40px_-16px_rgba(75,52,43,0.12)] backdrop-blur-xl"
-              : "bg-[color-mix(in_srgb,var(--amara-pearl)_40%,transparent)] backdrop-blur-sm"
+              ? "border-b border-[color-mix(in_srgb,var(--amila-nude-stone)_45%,transparent)] bg-[color-mix(in_srgb,var(--amila-pearl)_90%,white)] shadow-[0_12px_40px_-16px_rgba(75,52,43,0.12)] backdrop-blur-xl"
+              : "bg-[color-mix(in_srgb,var(--amila-pearl)_40%,transparent)] backdrop-blur-sm"
           }`}
         >
           <div className="container-wide flex items-center justify-between gap-4 px-5 py-3.5 sm:px-8 sm:py-4 lg:px-12">
@@ -47,7 +47,7 @@ export function Header() {
                   className={`nav-link-underline text-sm font-medium transition-colors hover:text-smoked-teal ${
                     location.pathname === link.href
                       ? "text-smoked-teal"
-                      : "text-[color-mix(in_srgb,var(--amara-espresso)_88%,white)]"
+                      : "text-[color-mix(in_srgb,var(--amila-espresso)_88%,white)]"
                   }`}
                 >
                   {link.label}
@@ -61,7 +61,7 @@ export function Header() {
 
             <button
               type="button"
-              className="relative z-50 flex h-11 w-11 flex-col items-center justify-center gap-1.5 rounded-full border border-[color-mix(in_srgb,var(--amara-nude-stone)_50%,transparent)] bg-white/60 shadow-sm backdrop-blur lg:hidden"
+              className="relative z-50 flex h-11 w-11 flex-col items-center justify-center gap-1.5 rounded-full border border-[color-mix(in_srgb,var(--amila-nude-stone)_50%,transparent)] bg-white/60 shadow-sm backdrop-blur lg:hidden"
               aria-expanded={menuOpen}
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               onClick={() => setMenuOpen((o) => !o)}

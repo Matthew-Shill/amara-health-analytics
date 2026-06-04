@@ -232,7 +232,7 @@ export const INVENTORY_DEMO = {
     { label: "Estimated Revenue Impact", value: "-$2,700", highlight: true },
   ],
   supportingText:
-    "Instead of only tracking vials, syringes, or packages, Amara can help clinics understand product usage at the unit, dose, or treatment level, revealing waste, leakage, and reorder timing opportunities.",
+    "Instead of only tracking vials, syringes, or packages, Amila can help clinics understand product usage at the unit, dose, or treatment level, revealing waste, leakage, and reorder timing opportunities.",
 } as const;
 
 export const WHO_WE_SERVE_SIZES = [
@@ -278,7 +278,7 @@ export const WHO_WE_HELP = [
     title: "Aesthetic Clinics",
     challenges:
       "Service mix, provider productivity, product usage, and marketing attribution rarely align in one view.",
-    help: "Amara clarifies profit, retention, inventory usage, and growth opportunities.",
+    help: "Amila clarifies profit, retention, inventory usage, and growth opportunities.",
   },
   {
     title: "Med Spas",
@@ -290,7 +290,7 @@ export const WHO_WE_HELP = [
     title: "Private Medical Practices",
     challenges:
       "Clinical and operational data often live in separate systems with limited reporting.",
-    help: "Amara connects operational, financial, and patient data into executive-ready insight.",
+    help: "Amila connects operational, financial, and patient data into executive-ready insight.",
   },
   {
     title: "Wellness Clinics",
@@ -314,7 +314,7 @@ export const WHO_WE_HELP = [
     title: "Multi-Provider Organizations",
     challenges:
       "Comparing performance across locations and teams requires consistent visibility.",
-    help: "Amara builds unified reporting so leadership sees profit, retention, and growth opportunities across the organization.",
+    help: "Amila builds unified reporting so leadership sees profit, retention, and growth opportunities across the organization.",
   },
   {
     title: "Dental Practices",
@@ -524,7 +524,7 @@ export const TEAM_MEMBERS = [
       "Johns Hopkins-trained Applied & Computational Mathematics professional with experience in AI, machine learning, data analytics, and healthcare-focused systems.",
     support:
       "Nadine helps transform complex operational and client data into clear reporting, practical recommendations, and smarter growth decisions.",
-    bio: "Nadine brings a strong quantitative and technical foundation to Amara Health Analytics, with graduate training in Applied & Computational Mathematics from Johns Hopkins University and ongoing work in genomic data analysis at the University of Connecticut. Her background spans AI, machine learning, statistical modeling, and production data systems—experience she applies to help healthcare, wellness, and aesthetic businesses turn scattered operational data into clear reporting, practical recommendations, and smarter growth decisions.",
+    bio: "Nadine brings a strong quantitative and technical foundation to Amila Health Analytics, with graduate training in Applied & Computational Mathematics from Johns Hopkins University and ongoing work in genomic data analysis at the University of Connecticut. Her background spans AI, machine learning, statistical modeling, and production data systems—experience she applies to help healthcare, wellness, and aesthetic businesses turn scattered operational data into clear reporting, practical recommendations, and smarter growth decisions.",
     aboutHighlights: [
       "M.S. Applied & Computational Mathematics, Johns Hopkins University",
       "Genomic Data Analysis Graduate Certificate, University of Connecticut",

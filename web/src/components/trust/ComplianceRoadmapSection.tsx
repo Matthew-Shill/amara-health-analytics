@@ -16,7 +16,7 @@ export function ComplianceRoadmapSection() {
         <SectionHeading
           eyebrow="Compliance roadmap"
           title="Our Compliance Roadmap"
-          subtitle="Amara is being built with a long-term security roadmap appropriate for healthcare analytics and PHI-capable dashboards."
+          subtitle="Amila is being built with a long-term security roadmap appropriate for healthcare analytics and PHI-capable dashboards."
         />
       </Reveal>
 
@@ -33,7 +33,7 @@ export function ComplianceRoadmapSection() {
                   className="absolute left-0 top-8 hidden h-4 w-4 -translate-x-1/2 rounded-full border-2 border-smoked-teal bg-pearl lg:block"
                   aria-hidden
                 />
-                <article className="card-lift rounded-2xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_38%,transparent)] bg-white/75 p-6 shadow-[0_12px_40px_-18px_rgba(75,52,43,0.1)] sm:p-7 lg:p-8">
+                <article className="card-lift rounded-2xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_38%,transparent)] bg-white/75 p-6 shadow-[0_12px_40px_-18px_rgba(75,52,43,0.1)] sm:p-7 lg:p-8">
                   <div className="flex flex-wrap items-start justify-between gap-3">
                     <div>
                       <p className="text-[10px] font-bold uppercase tracking-wider text-smoked-teal">
@@ -49,7 +49,7 @@ export function ComplianceRoadmapSection() {
                     {step.items.map((item) => (
                       <li
                         key={item}
-                        className="flex gap-2.5 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_72%,white)]"
+                        className="flex gap-2.5 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_72%,white)]"
                       >
                         <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-smoked-teal/70" />
                         {item}

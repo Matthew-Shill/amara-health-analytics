@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { BrandMotif } from "@/components/ui/BrandMotif";
 
-const PAGE_TITLE = "Who We Help | Amara Health Analytics";
+const PAGE_TITLE = "Who We Help | Amila Health Analytics";
 const PAGE_DESCRIPTION =
-  "Amara serves healthcare and wellness organizations of every size—from sole practitioners and startups to multi-location groups and major corporations.";
+  "Amila serves healthcare and wellness organizations of every size—from sole practitioners and startups to multi-location groups and major corporations.";
 
 export function WhoWeHelpPage() {
   useEffect(() => {
@@ -21,11 +21,11 @@ export function WhoWeHelpPage() {
     }
 
     return () => {
-      document.title = "Amara Health Analytics | Have Your AHA Moment";
+      document.title = "Amila Health Analytics | Have Your AHA Moment";
       if (meta) {
         meta.setAttribute(
           "content",
-          "Amara Health Analytics helps healthcare and wellness organizations uncover profit, retention, inventory, and growth opportunities hidden in their data.",
+          "Amila Health Analytics helps healthcare and wellness organizations uncover profit, retention, inventory, and growth opportunities hidden in their data.",
         );
       }
     };
@@ -50,7 +50,7 @@ export function WhoWeHelpPage() {
           <div className="container-narrow relative z-10">
             <Reveal>
               <div className="mx-auto max-w-3xl text-center">
-                <p className="text-xs font-semibold uppercase tracking-[var(--amara-tracking-wide)] text-smoked-teal">
+                <p className="text-xs font-semibold uppercase tracking-[var(--amila-tracking-wide)] text-smoked-teal">
                   Who we help
                 </p>
                 <h1 className="mt-5 font-headline text-4xl font-semibold leading-[1.1] heading-accent sm:text-5xl lg:text-[3.25rem]">
@@ -60,9 +60,9 @@ export function WhoWeHelpPage() {
                   className="mx-auto mt-5 block h-1 w-16 rounded-full bg-gradient-to-r from-nude-stone via-smoked-teal to-transparent"
                   aria-hidden
                 />
-                <p className="mt-6 text-base leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_78%,white)] sm:text-lg">
+                <p className="mt-6 text-base leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_78%,white)] sm:text-lg">
                   Whether you are a solo provider, a fast-growing startup, a multi-location group,
-                  or a major corporation, Amara helps turn scattered operational and patient data
+                  or a major corporation, Amila helps turn scattered operational and patient data
                   into clear reporting, practical insight, and better decisions.
                 </p>
               </div>
@@ -77,7 +77,7 @@ export function WhoWeHelpPage() {
         <section className="section-pad">
           <div className="container-narrow">
             <Reveal>
-              <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-espresso via-[color-mix(in_srgb,var(--amara-espresso)_90%,var(--amara-smoked-teal))] to-smoked-teal px-8 py-16 text-center sm:px-14 lg:py-24">
+              <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-espresso via-[color-mix(in_srgb,var(--amila-espresso)_90%,var(--amila-smoked-teal))] to-smoked-teal px-8 py-16 text-center sm:px-14 lg:py-24">
                 <BrandMotif
                   className="absolute -left-4 top-1/2 h-48 w-48 -translate-y-1/2 opacity-[0.12]"
                   opacity={0.12}
@@ -93,14 +93,14 @@ export function WhoWeHelpPage() {
                 <h2 className="relative font-headline text-3xl font-semibold leading-tight text-pearl sm:text-4xl">
                   Not sure where to start?
                 </h2>
-                <p className="relative mx-auto mt-6 max-w-lg text-base leading-relaxed text-[color-mix(in_srgb,var(--amara-pearl)_88%,white)]">
+                <p className="relative mx-auto mt-6 max-w-lg text-base leading-relaxed text-[color-mix(in_srgb,var(--amila-pearl)_88%,white)]">
                   Tell us about your organization, your systems, and the decisions you need to make.
                   We will help identify the analytics approach that fits your size and goals.
                 </p>
                 <div className="relative mt-10 flex flex-wrap justify-center gap-4">
                   <Button
                     href="/#contact"
-                    className="!from-pearl !to-[color-mix(in_srgb,var(--amara-pearl)_92%,white)] !text-espresso !shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] hover:!scale-[1.04]"
+                    className="!from-pearl !to-[color-mix(in_srgb,var(--amila-pearl)_92%,white)] !text-espresso !shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] hover:!scale-[1.04]"
                   >
                     Start a Conversation
                   </Button>

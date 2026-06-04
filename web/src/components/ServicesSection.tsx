@@ -1,5 +1,5 @@
 import { SERVICES } from "@/lib/content";
-import { AmaraIcon, SERVICE_ICON_NAMES } from "@/components/ui/icons/AmaraIcon";
+import { AmilaIcon, SERVICE_ICON_NAMES } from "@/components/ui/icons/AmilaIcon";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionBackdropWide } from "@/components/ui/SectionBackdrop";
@@ -25,14 +25,14 @@ export function ServicesSection() {
       <div className="grid gap-6 md:grid-cols-2">
         {SERVICES.map((service, i) => (
           <Reveal key={service.title} delay={(i % 4) as 0 | 1 | 2 | 3}>
-            <article className="card-lift card-accent group relative h-full overflow-hidden rounded-3xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_40%,transparent)] bg-white/70 p-7 shadow-[0_16px_48px_-20px_rgba(75,52,43,0.15)] lg:p-8">
+            <article className="card-lift card-accent group relative h-full overflow-hidden rounded-3xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_40%,transparent)] bg-white/70 p-7 shadow-[0_16px_48px_-20px_rgba(75,52,43,0.15)] lg:p-8">
               <div
                 className={`pointer-events-none absolute -right-8 -top-8 h-32 w-32 rounded-full bg-gradient-to-br ${SERVICE_ACCENTS[i]} opacity-80 blur-2xl transition-transform duration-500 group-hover:scale-125`}
                 aria-hidden
               />
               <div className="relative flex items-start gap-4">
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-smoked-teal to-[color-mix(in_srgb,var(--amara-smoked-teal)_65%,var(--amara-espresso))] shadow-lg">
-                  <AmaraIcon
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-smoked-teal to-[color-mix(in_srgb,var(--amila-smoked-teal)_65%,var(--amila-espresso))] shadow-lg">
+                  <AmilaIcon
                     name={SERVICE_ICON_NAMES[i]}
                     className="h-6 w-6 text-pearl"
                   />
@@ -45,7 +45,7 @@ export function ServicesSection() {
                 {service.features.map((feature) => (
                   <li
                     key={feature}
-                    className="flex items-center gap-2.5 rounded-lg bg-[color-mix(in_srgb,var(--amara-pearl)_80%,white)] px-3 py-2 text-sm text-[color-mix(in_srgb,var(--amara-espresso)_80%,white)]"
+                    className="flex items-center gap-2.5 rounded-lg bg-[color-mix(in_srgb,var(--amila-pearl)_80%,white)] px-3 py-2 text-sm text-[color-mix(in_srgb,var(--amila-espresso)_80%,white)]"
                   >
                     <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-smoked-teal" />
                     {feature}

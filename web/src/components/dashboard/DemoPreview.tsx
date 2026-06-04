@@ -26,23 +26,23 @@ function PreviewShell({
 }) {
   return (
     <div className="glass-panel-strong relative overflow-hidden rounded-2xl p-4 sm:p-5 lg:p-6">
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-[color-mix(in_srgb,var(--amara-nude-stone)_40%,transparent)] pb-3 sm:mb-5 sm:pb-4">
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-[color-mix(in_srgb,var(--amila-nude-stone)_40%,transparent)] pb-3 sm:mb-5 sm:pb-4">
         <div>
           <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-smoked-teal">
-            Amara insight view
+            Amila insight view
           </p>
           <p className="mt-1 font-headline text-base text-espresso sm:text-lg">
             {dashboardTitle}
           </p>
         </div>
-        <div className="flex items-center gap-2 rounded-full bg-[color-mix(in_srgb,var(--amara-smoked-teal)_12%,white)] px-3 py-1.5 ring-1 ring-[color-mix(in_srgb,var(--amara-smoked-teal)_22%,transparent)]">
+        <div className="flex items-center gap-2 rounded-full bg-[color-mix(in_srgb,var(--amila-smoked-teal)_12%,white)] px-3 py-1.5 ring-1 ring-[color-mix(in_srgb,var(--amila-smoked-teal)_22%,transparent)]">
           <span className="h-2 w-2 animate-pulse-soft rounded-full bg-smoked-teal" />
           <span className="text-[11px] font-semibold text-smoked-teal">Sample data</span>
         </div>
       </div>
       {children}
       {insight ? (
-        <div className="mt-4 rounded-xl border border-dashed border-[color-mix(in_srgb,var(--amara-smoked-teal)_28%,transparent)] bg-[color-mix(in_srgb,var(--amara-smoked-teal)_6%,white)] px-4 py-3 sm:mt-5">
+        <div className="mt-4 rounded-xl border border-dashed border-[color-mix(in_srgb,var(--amila-smoked-teal)_28%,transparent)] bg-[color-mix(in_srgb,var(--amila-smoked-teal)_6%,white)] px-4 py-3 sm:mt-5">
           <p className="text-[10px] font-bold uppercase tracking-wider text-smoked-teal">
             Recommended action
           </p>
@@ -55,8 +55,8 @@ function PreviewShell({
 
 function KpiTile({ label, value, sub }: { label: string; value: string; sub?: string }) {
   return (
-    <div className="rounded-xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_35%,transparent)] bg-white/55 p-3">
-      <p className="text-[10px] font-medium text-[color-mix(in_srgb,var(--amara-espresso)_65%,white)] sm:text-[11px]">
+    <div className="rounded-xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/55 p-3">
+      <p className="text-[10px] font-medium text-[color-mix(in_srgb,var(--amila-espresso)_65%,white)] sm:text-[11px]">
         {label}
       </p>
       <p className="mt-1 font-headline text-lg text-espresso">{value}</p>
@@ -77,14 +77,14 @@ function RetentionFeatured({ insight, dashboardTitle }: { insight?: string; dash
             <p className="text-xs font-medium text-espresso">90-day retention trend</p>
             <p className="font-headline text-xl text-smoked-teal">+6.2%</p>
           </div>
-          <div className="flex h-36 items-end gap-1.5 rounded-xl bg-[color-mix(in_srgb,white_55%,var(--amara-pearl))] p-3 sm:h-44">
+          <div className="flex h-36 items-end gap-1.5 rounded-xl bg-[color-mix(in_srgb,white_55%,var(--amila-pearl))] p-3 sm:h-44">
             {bars.map((h, i) => (
               <div
                 key={i}
                 className={`flex-1 rounded-sm transition-all ${
                   i >= bars.length - 2
                     ? "bg-smoked-teal"
-                    : "bg-[color-mix(in_srgb,var(--amara-smoked-teal)_55%,var(--amara-pearl))]"
+                    : "bg-[color-mix(in_srgb,var(--amila-smoked-teal)_55%,var(--amila-pearl))]"
                 }`}
                 style={{ height: `${h}%` }}
               />
@@ -121,7 +121,7 @@ function ProfitabilityFeatured({
         {rows.map((row) => (
           <div
             key={row.service}
-            className="rounded-xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_30%,transparent)] bg-white/50 p-3 sm:p-4"
+            className="rounded-xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_30%,transparent)] bg-white/50 p-3 sm:p-4"
           >
             <div className="flex flex-wrap items-center justify-between gap-2">
               <span className="text-sm font-semibold text-espresso">{row.service}</span>
@@ -129,11 +129,11 @@ function ProfitabilityFeatured({
             </div>
             <div className="mt-2 h-2 overflow-hidden rounded-full bg-pearl">
               <div
-                className="h-full rounded-full bg-gradient-to-r from-smoked-teal to-[color-mix(in_srgb,var(--amara-smoked-teal)_70%,var(--amara-espresso))]"
+                className="h-full rounded-full bg-gradient-to-r from-smoked-teal to-[color-mix(in_srgb,var(--amila-smoked-teal)_70%,var(--amila-espresso))]"
                 style={{ width: `${row.margin}%` }}
               />
             </div>
-            <div className="mt-2 flex justify-between text-[11px] text-[color-mix(in_srgb,var(--amara-espresso)_68%,white)]">
+            <div className="mt-2 flex justify-between text-[11px] text-[color-mix(in_srgb,var(--amila-espresso)_68%,white)]">
               <span>Revenue {row.revenue}</span>
               <span>Loaded cost {row.cost}</span>
             </div>
@@ -159,7 +159,7 @@ function InventoryFeatured({ insight, dashboardTitle }: { insight?: string; dash
   ];
   return (
     <PreviewShell dashboardTitle={dashboardTitle} insight={insight}>
-      <p className="mb-3 text-xs text-[color-mix(in_srgb,var(--amara-espresso)_72%,white)]">
+      <p className="mb-3 text-xs text-[color-mix(in_srgb,var(--amila-espresso)_72%,white)]">
         Botox tracked in units — not vials — aligned to how your team administers product.
       </p>
       <dl className="space-y-2">
@@ -168,13 +168,13 @@ function InventoryFeatured({ insight, dashboardTitle }: { insight?: string; dash
             key={row.label}
             className={`flex items-center justify-between gap-4 rounded-xl px-3 py-2.5 sm:px-4 ${
               row.tone === "alert"
-                ? "border border-[color-mix(in_srgb,var(--amara-smoked-teal)_25%,transparent)] bg-[color-mix(in_srgb,var(--amara-smoked-teal)_10%,white)]"
+                ? "border border-[color-mix(in_srgb,var(--amila-smoked-teal)_25%,transparent)] bg-[color-mix(in_srgb,var(--amila-smoked-teal)_10%,white)]"
                 : row.tone === "warn"
-                  ? "bg-[color-mix(in_srgb,var(--amara-nude-stone)_18%,white)]"
-                  : "bg-white/50 ring-1 ring-[color-mix(in_srgb,var(--amara-nude-stone)_25%,transparent)]"
+                  ? "bg-[color-mix(in_srgb,var(--amila-nude-stone)_18%,white)]"
+                  : "bg-white/50 ring-1 ring-[color-mix(in_srgb,var(--amila-nude-stone)_25%,transparent)]"
             }`}
           >
-            <dt className="text-xs text-[color-mix(in_srgb,var(--amara-espresso)_72%,white)] sm:text-sm">
+            <dt className="text-xs text-[color-mix(in_srgb,var(--amila-espresso)_72%,white)] sm:text-sm">
               {row.label}
             </dt>
             <dd
@@ -208,31 +208,31 @@ function ProviderFeatured({ insight, dashboardTitle }: { insight?: string; dashb
         {providers.map((p, i) => (
           <div
             key={p.name}
-            className="rounded-xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_30%,transparent)] bg-white/50 p-3 sm:p-4"
+            className="rounded-xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_30%,transparent)] bg-white/50 p-3 sm:p-4"
           >
             <div className="flex items-center justify-between gap-2">
               <span className="text-sm font-semibold text-espresso">{p.name}</span>
               {i === 0 ? (
-                <span className="rounded-full bg-[color-mix(in_srgb,var(--amara-smoked-teal)_12%,white)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-smoked-teal">
+                <span className="rounded-full bg-[color-mix(in_srgb,var(--amila-smoked-teal)_12%,white)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-smoked-teal">
                   Top performer
                 </span>
               ) : null}
             </div>
             <div className="mt-3 grid grid-cols-3 gap-2 text-center">
               <div>
-                <p className="text-[10px] text-[color-mix(in_srgb,var(--amara-espresso)_60%,white)]">
+                <p className="text-[10px] text-[color-mix(in_srgb,var(--amila-espresso)_60%,white)]">
                   Rebook
                 </p>
                 <p className="font-headline text-base text-smoked-teal">{p.rebook}%</p>
               </div>
               <div>
-                <p className="text-[10px] text-[color-mix(in_srgb,var(--amara-espresso)_60%,white)]">
+                <p className="text-[10px] text-[color-mix(in_srgb,var(--amila-espresso)_60%,white)]">
                   Avg value
                 </p>
                 <p className="font-headline text-base text-espresso">{p.value}</p>
               </div>
               <div>
-                <p className="text-[10px] text-[color-mix(in_srgb,var(--amara-espresso)_60%,white)]">
+                <p className="text-[10px] text-[color-mix(in_srgb,var(--amila-espresso)_60%,white)]">
                   Utilization
                 </p>
                 <p className="font-headline text-base text-espresso">{p.util}%</p>
@@ -257,7 +257,7 @@ function MarketingFeatured({ insight, dashboardTitle }: { insight?: string; dash
         {channels.map((row) => (
           <div
             key={row.channel}
-            className="rounded-xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_30%,transparent)] bg-white/50 p-3 sm:p-4"
+            className="rounded-xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_30%,transparent)] bg-white/50 p-3 sm:p-4"
           >
             <div className="flex flex-wrap items-center justify-between gap-2">
               <span className="text-sm font-semibold text-espresso">{row.channel}</span>
@@ -269,7 +269,7 @@ function MarketingFeatured({ insight, dashboardTitle }: { insight?: string; dash
                 style={{ width: `${row.pct}%` }}
               />
             </div>
-            <p className="mt-2 text-[11px] text-[color-mix(in_srgb,var(--amara-espresso)_68%,white)]">
+            <p className="mt-2 text-[11px] text-[color-mix(in_srgb,var(--amila-espresso)_68%,white)]">
               Avg patient LTV {row.ltv}
             </p>
           </div>
@@ -307,7 +307,7 @@ function ExecutiveFeatured({ insight, dashboardTitle }: { insight?: string; dash
             <p className="text-xs font-medium text-espresso">Performance index</p>
             <p className="font-headline text-xl text-smoked-teal">+14.8%</p>
           </div>
-          <div className="h-32 rounded-xl bg-[color-mix(in_srgb,white_55%,var(--amara-pearl))] p-2 sm:h-36">
+          <div className="h-32 rounded-xl bg-[color-mix(in_srgb,white_55%,var(--amila-pearl))] p-2 sm:h-36">
             <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="none">
               <defs>
                 <linearGradient id="demoExecFill" x1="0" y1="0" x2="0" y2="1">
@@ -330,9 +330,9 @@ function ExecutiveFeatured({ insight, dashboardTitle }: { insight?: string; dash
           {kpis.map((k) => (
             <div
               key={k.label}
-              className="rounded-xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_35%,transparent)] bg-white/50 p-3"
+              className="rounded-xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/50 p-3"
             >
-              <p className="text-[10px] font-medium text-[color-mix(in_srgb,var(--amara-espresso)_65%,white)]">
+              <p className="text-[10px] font-medium text-[color-mix(in_srgb,var(--amila-espresso)_65%,white)]">
                 {k.label}
               </p>
               <p className="mt-1 font-headline text-base text-espresso">{k.value}</p>
@@ -343,7 +343,7 @@ function ExecutiveFeatured({ insight, dashboardTitle }: { insight?: string; dash
           ))}
         </div>
       </div>
-      <div className="mt-3 rounded-xl bg-[color-mix(in_srgb,var(--amara-nude-stone)_15%,white)] px-4 py-3">
+      <div className="mt-3 rounded-xl bg-[color-mix(in_srgb,var(--amila-nude-stone)_15%,white)] px-4 py-3">
         <p className="text-[10px] font-bold uppercase tracking-wider text-smoked-teal">
           Q2 focus areas
         </p>
@@ -402,13 +402,13 @@ export function DemoPreview({
         </div>
         <div className="grid grid-cols-2 gap-2 text-[10px]">
           <div className={`${shared} text-espresso`}>
-            <span className="text-[color-mix(in_srgb,var(--amara-espresso)_60%,white)]">
+            <span className="text-[color-mix(in_srgb,var(--amila-espresso)_60%,white)]">
               Churn risk
             </span>
             <p className="font-semibold">24 patients</p>
           </div>
           <div className={`${shared} text-espresso`}>
-            <span className="text-[color-mix(in_srgb,var(--amara-espresso)_60%,white)]">
+            <span className="text-[color-mix(in_srgb,var(--amila-espresso)_60%,white)]">
               Lifetime value
             </span>
             <p className="font-semibold">$1,840 avg</p>

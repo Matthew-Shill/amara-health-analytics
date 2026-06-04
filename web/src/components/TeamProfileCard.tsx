@@ -25,7 +25,7 @@ export function TeamProfileCard({ member, variant = "compact", wide = false }: T
 
   return (
     <article
-      className={`rounded-2xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_35%,transparent)] bg-[color-mix(in_srgb,white_65%,var(--amara-pearl))] shadow-[0_12px_40px_-20px_rgba(75,52,43,0.1)] ${
+      className={`rounded-2xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-[color-mix(in_srgb,white_65%,var(--amila-pearl))] shadow-[0_12px_40px_-20px_rgba(75,52,43,0.1)] ${
         isFull ? (wide ? "p-8 lg:p-12" : "p-8 lg:p-10") : "p-6"
       }`}
     >
@@ -40,7 +40,7 @@ export function TeamProfileCard({ member, variant = "compact", wide = false }: T
       >
         {member.image ? (
           <div
-            className={`relative shrink-0 overflow-hidden rounded-2xl ring-1 ring-[color-mix(in_srgb,var(--amara-nude-stone)_40%,transparent)] ${imageSizeClass}`}
+            className={`relative shrink-0 overflow-hidden rounded-2xl ring-1 ring-[color-mix(in_srgb,var(--amila-nude-stone)_40%,transparent)] ${imageSizeClass}`}
           >
             {imageCrop ? (
               <img
@@ -67,7 +67,7 @@ export function TeamProfileCard({ member, variant = "compact", wide = false }: T
           </div>
         ) : (
           <div
-            className={`flex shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[color-mix(in_srgb,var(--amara-smoked-teal)_12%,white)] to-[color-mix(in_srgb,var(--amara-nude-stone)_25%,white)] font-headline font-semibold text-smoked-teal ring-1 ring-[color-mix(in_srgb,var(--amara-nude-stone)_40%,transparent)] ${
+            className={`flex shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[color-mix(in_srgb,var(--amila-smoked-teal)_12%,white)] to-[color-mix(in_srgb,var(--amila-nude-stone)_25%,white)] font-headline font-semibold text-smoked-teal ring-1 ring-[color-mix(in_srgb,var(--amila-nude-stone)_40%,transparent)] ${
               isFull ? "h-36 w-36 text-3xl sm:h-44 sm:w-44" : "h-16 w-16 text-lg"
             }`}
             aria-hidden
@@ -86,7 +86,7 @@ export function TeamProfileCard({ member, variant = "compact", wide = false }: T
           </h3>
           <p className="mt-1 text-sm font-medium text-smoked-teal">{member.title}</p>
           <p
-            className={`mt-3 leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_72%,white)] ${
+            className={`mt-3 leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_72%,white)] ${
               isFull ? "text-base lg:text-lg" : "text-sm"
             }`}
           >
@@ -97,7 +97,7 @@ export function TeamProfileCard({ member, variant = "compact", wide = false }: T
               {member.aboutHighlights.map((highlight) => (
                 <li
                   key={highlight}
-                  className="rounded-xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_30%,transparent)] bg-white/50 px-4 py-3 text-sm leading-snug text-[color-mix(in_srgb,var(--amara-espresso)_75%,white)]"
+                  className="rounded-xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_30%,transparent)] bg-white/50 px-4 py-3 text-sm leading-snug text-[color-mix(in_srgb,var(--amila-espresso)_75%,white)]"
                 >
                   {highlight}
                 </li>
@@ -105,7 +105,7 @@ export function TeamProfileCard({ member, variant = "compact", wide = false }: T
             </ul>
           )}
           {!isFull && (
-            <p className="mt-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_68%,white)]">
+            <p className="mt-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_68%,white)]">
               {member.support}
             </p>
           )}

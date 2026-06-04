@@ -1,4 +1,4 @@
-import { AmaraIcon, type AmaraIconName } from "@/components/ui/icons/AmaraIcon";
+import { AmilaIcon, type AmilaIconName } from "@/components/ui/icons/AmilaIcon";
 
 function CheckVerifiedIcon({ className }: { className?: string }) {
   return (
@@ -22,7 +22,7 @@ function CheckVerifiedIcon({ className }: { className?: string }) {
 
 interface VerifiedBadgeProps {
   label: string;
-  icon?: AmaraIconName;
+  icon?: AmilaIconName;
 }
 
 export function VerifiedBadge({ label, icon }: VerifiedBadgeProps) {
@@ -30,7 +30,7 @@ export function VerifiedBadge({ label, icon }: VerifiedBadgeProps) {
     <span className="verified-trust-badge">
       <span className="verified-trust-badge__mark" aria-hidden>
         {icon ? (
-          <AmaraIcon name={icon} className="h-3 w-3" />
+          <AmilaIcon name={icon} className="h-3 w-3" />
         ) : (
           <CheckVerifiedIcon className="h-4 w-4" />
         )}

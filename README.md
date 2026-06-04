@@ -1,6 +1,6 @@
-# Amara Health Analytics
+# Amila Health Analytics
 
-Brand assets and marketing website for **Amara Health Analytics**.
+Brand assets and marketing website for **Amila Health Analytics**.
 
 ## Repository structure
 
@@ -53,4 +53,4 @@ If you see **404 NOT_FOUND**, the deployment is usually pointing at the wrong fo
 
 ## Remote
 
-GitHub: https://github.com/Matthew-Shill/amara-health-analytics
+GitHub: https://github.com/Matthew-Shill/amila-health-analytics

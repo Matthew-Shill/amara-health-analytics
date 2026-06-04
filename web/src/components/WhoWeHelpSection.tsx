@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { WHO_WE_HELP } from "@/lib/content";
-import { AmaraIcon, WHO_WE_HELP_ICONS } from "@/components/ui/icons/AmaraIcon";
+import { AmilaIcon, WHO_WE_HELP_ICONS } from "@/components/ui/icons/AmilaIcon";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionBackdropWide } from "@/components/ui/SectionBackdrop";
@@ -56,10 +56,10 @@ export function WhoWeHelpSection() {
         <div id="who-we-help-grid" className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
           {visibleItems.map((card, i) => (
             <Reveal key={card.title} delay={(i % 4) as 0 | 1 | 2 | 3}>
-              <article className="card-lift card-accent group h-full rounded-2xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_35%,transparent)] bg-white/75 p-6 shadow-[0_12px_40px_-18px_rgba(75,52,43,0.12)] lg:p-7">
-                <div className="mb-4 flex items-center gap-3 rounded-xl bg-gradient-to-br from-[color-mix(in_srgb,var(--amara-smoked-teal)_15%,white)] to-transparent px-3 py-2">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/70 ring-1 ring-[color-mix(in_srgb,var(--amara-smoked-teal)_15%,transparent)]">
-                    <AmaraIcon
+              <article className="card-lift card-accent group h-full rounded-2xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/75 p-6 shadow-[0_12px_40px_-18px_rgba(75,52,43,0.12)] lg:p-7">
+                <div className="mb-4 flex items-center gap-3 rounded-xl bg-gradient-to-br from-[color-mix(in_srgb,var(--amila-smoked-teal)_15%,white)] to-transparent px-3 py-2">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/70 ring-1 ring-[color-mix(in_srgb,var(--amila-smoked-teal)_15%,transparent)]">
+                    <AmilaIcon
                       name={WHO_WE_HELP_ICONS[card.title]}
                       className="h-5 w-5 text-smoked-teal"
                     />
@@ -68,12 +68,12 @@ export function WhoWeHelpSection() {
                     {card.title}
                   </h3>
                 </div>
-                <p className="text-sm leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_72%,white)]">
+                <p className="text-sm leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_72%,white)]">
                   <span className="font-bold text-espresso">Challenge · </span>
                   {card.challenges}
                 </p>
-                <p className="mt-4 rounded-xl bg-[color-mix(in_srgb,var(--amara-smoked-teal)_8%,white)] px-4 py-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amara-espresso)_78%,white)]">
-                  <span className="font-bold text-smoked-teal">Amara · </span>
+                <p className="mt-4 rounded-xl bg-[color-mix(in_srgb,var(--amila-smoked-teal)_8%,white)] px-4 py-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_78%,white)]">
+                  <span className="font-bold text-smoked-teal">Amila · </span>
                   {card.help}
                 </p>
               </article>
@@ -83,7 +83,7 @@ export function WhoWeHelpSection() {
 
         {hasMore && (
           <div
-            className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[color-mix(in_srgb,var(--amara-pearl)_95%,white)] via-[color-mix(in_srgb,var(--amara-pearl)_70%,transparent)] to-transparent"
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[color-mix(in_srgb,var(--amila-pearl)_95%,white)] via-[color-mix(in_srgb,var(--amila-pearl)_70%,transparent)] to-transparent"
             aria-hidden
           />
         )}

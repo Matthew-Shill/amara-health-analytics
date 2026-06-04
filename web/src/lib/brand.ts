@@ -1,4 +1,4 @@
-export const COMPANY_NAME = "Amara Health Analytics";
+export const COMPANY_NAME = "Amila Health Analytics";
 export const TAGLINE = "Have Your AHA Moment";
 export const MISSION = "Don't be the business with wasted data.";
 

@@ -1,6 +1,6 @@
-# Amara Health Analytics — Website
+# Amila Health Analytics — Website
 
-Premium marketing site for Amara Health Analytics (V1).
+Premium marketing site for Amila Health Analytics (V1).
 
 ## Setup
 

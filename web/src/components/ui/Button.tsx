@@ -5,9 +5,9 @@ type Variant = "primary" | "secondary" | "ghost";
 
 const variants: Record<Variant, string> = {
   primary:
-    "btn-primary bg-gradient-to-br from-smoked-teal to-[color-mix(in_srgb,var(--amara-smoked-teal)_75%,var(--amara-espresso))] text-pearl shadow-[0_14px_40px_-10px_color-mix(in_srgb,var(--amara-smoked-teal)_55%,transparent)] hover:shadow-[0_18px_48px_-8px_color-mix(in_srgb,var(--amara-smoked-teal)_50%,transparent)] hover:scale-[1.03] active:scale-[0.98]",
+    "btn-primary bg-gradient-to-br from-smoked-teal to-[color-mix(in_srgb,var(--amila-smoked-teal)_75%,var(--amila-espresso))] text-pearl shadow-[0_14px_40px_-10px_color-mix(in_srgb,var(--amila-smoked-teal)_55%,transparent)] hover:shadow-[0_18px_48px_-8px_color-mix(in_srgb,var(--amila-smoked-teal)_50%,transparent)] hover:scale-[1.03] active:scale-[0.98]",
   secondary:
-    "bg-white/80 text-espresso border border-[color-mix(in_srgb,var(--amara-nude-stone)_60%,transparent)] shadow-[0_8px_24px_-12px_color-mix(in_srgb,var(--amara-espresso)_12%,transparent)] hover:border-smoked-teal hover:text-smoked-teal hover:scale-[1.02]",
+    "bg-white/80 text-espresso border border-[color-mix(in_srgb,var(--amila-nude-stone)_60%,transparent)] shadow-[0_8px_24px_-12px_color-mix(in_srgb,var(--amila-espresso)_12%,transparent)] hover:border-smoked-teal hover:text-smoked-teal hover:scale-[1.02]",
   ghost:
     "bg-transparent text-espresso hover:text-smoked-teal underline-offset-4 hover:underline",
 };

@@ -1,9 +1,9 @@
 import { SOLUTION_POINTS } from "@/lib/content";
 import {
-  AmaraIcon,
+  AmilaIcon,
   SOLUTION_POINT_ICONS,
   WORKFLOW_ICONS,
-} from "@/components/ui/icons/AmaraIcon";
+} from "@/components/ui/icons/AmilaIcon";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionBackdrop } from "@/components/ui/SectionBackdrop";
@@ -21,8 +21,8 @@ export function SolutionSection() {
       <div className="relative">
         <Reveal>
           <SectionHeading
-            eyebrow="The Amara approach"
-            title="Amara transforms scattered data into practical clarity and insight."
+            eyebrow="The Amila approach"
+            title="Amila transforms scattered data into practical clarity and insight."
             subtitle="We help health and wellness organizations move from fragmented reporting to a clear view of what is driving profit, retention, and growth."
           />
         </Reveal>
@@ -33,13 +33,13 @@ export function SolutionSection() {
               {SOLUTION_POINTS.map((point, i) => (
                 <li
                   key={point}
-                  className="card-lift flex items-start gap-4 rounded-2xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_35%,transparent)] bg-white/60 px-5 py-4 shadow-[0_8px_30px_-16px_rgba(75,52,43,0.1)] transition-colors hover:border-smoked-teal/50 hover:bg-white/90"
+                  className="card-lift flex items-start gap-4 rounded-2xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/60 px-5 py-4 shadow-[0_8px_30px_-16px_rgba(75,52,43,0.1)] transition-colors hover:border-smoked-teal/50 hover:bg-white/90"
                 >
                   <span
-                    className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-smoked-teal to-[color-mix(in_srgb,var(--amara-smoked-teal)_70%,var(--amara-espresso))] shadow-md"
+                    className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-smoked-teal to-[color-mix(in_srgb,var(--amila-smoked-teal)_70%,var(--amila-espresso))] shadow-md"
                     aria-hidden
                   >
-                    <AmaraIcon
+                    <AmilaIcon
                       name={SOLUTION_POINT_ICONS[i]}
                       className="h-[18px] w-[18px] text-pearl"
                     />
@@ -55,40 +55,40 @@ export function SolutionSection() {
           <Reveal delay={2}>
             <div className="glass-panel-strong relative overflow-hidden rounded-3xl p-7 lg:p-9">
               <div
-                className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-[color-mix(in_srgb,var(--amara-smoked-teal)_15%,transparent)] blur-2xl"
+                className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-[color-mix(in_srgb,var(--amila-smoked-teal)_15%,transparent)] blur-2xl"
                 aria-hidden
               />
-              <p className="text-xs font-semibold uppercase tracking-[var(--amara-tracking-wide)] text-smoked-teal">
+              <p className="text-xs font-semibold uppercase tracking-[var(--amila-tracking-wide)] text-smoked-teal">
                 Our approach
               </p>
               <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
                 {workflow.map((step, i) => (
                   <div
                     key={step.label}
-                    className="group rounded-2xl border border-[color-mix(in_srgb,var(--amara-nude-stone)_30%,transparent)] bg-white/50 p-4 transition-all hover:border-smoked-teal/40 hover:shadow-lg"
+                    className="group rounded-2xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_30%,transparent)] bg-white/50 p-4 transition-all hover:border-smoked-teal/40 hover:shadow-lg"
                   >
                     <div className="flex items-center gap-3">
-                      <span className="flex h-10 w-10 items-center justify-center rounded-full bg-pearl ring-2 ring-[color-mix(in_srgb,var(--amara-smoked-teal)_25%,transparent)]">
-                        <AmaraIcon
+                      <span className="flex h-10 w-10 items-center justify-center rounded-full bg-pearl ring-2 ring-[color-mix(in_srgb,var(--amila-smoked-teal)_25%,transparent)]">
+                        <AmilaIcon
                           name={WORKFLOW_ICONS[i]}
                           className="h-5 w-5 text-smoked-teal"
                         />
                       </span>
                       <div>
                         <p className="font-headline text-lg text-espresso">{step.label}</p>
-                        <p className="text-xs text-[color-mix(in_srgb,var(--amara-espresso)_65%,white)]">
+                        <p className="text-xs text-[color-mix(in_srgb,var(--amila-espresso)_65%,white)]">
                           Step {i + 1}
                         </p>
                       </div>
                     </div>
-                    <p className="mt-2 pl-[52px] text-sm text-[color-mix(in_srgb,var(--amara-espresso)_72%,white)]">
+                    <p className="mt-2 pl-[52px] text-sm text-[color-mix(in_srgb,var(--amila-espresso)_72%,white)]">
                       {step.desc}
                     </p>
                   </div>
                 ))}
               </div>
-              <p className="mt-6 rounded-2xl border border-[color-mix(in_srgb,var(--amara-smoked-teal)_20%,transparent)] bg-gradient-to-r from-[color-mix(in_srgb,var(--amara-smoked-teal)_12%,white)] to-transparent px-5 py-4 text-sm leading-relaxed text-espresso">
-                Amara is not simply a dashboard company. We partner at the intersection of
+              <p className="mt-6 rounded-2xl border border-[color-mix(in_srgb,var(--amila-smoked-teal)_20%,transparent)] bg-gradient-to-r from-[color-mix(in_srgb,var(--amila-smoked-teal)_12%,white)] to-transparent px-5 py-4 text-sm leading-relaxed text-espresso">
+                Amila is not simply a dashboard company. We partner at the intersection of
                 analytics, operations, technology, and growth strategy.
               </p>
             </div>

@@ -1,6 +1,6 @@
 import type { ReactNode, SVGProps } from "react";
 
-export type AmaraIconName =
+export type AmilaIconName =
   | "disconnected-data"
   | "profit-blind-spot"
   | "retention-gap"
@@ -47,8 +47,8 @@ export type AmaraIconName =
   | "hospital-workflow"
   | "graduation-cap";
 
-interface AmaraIconProps extends SVGProps<SVGSVGElement> {
-  name: AmaraIconName;
+interface AmilaIconProps extends SVGProps<SVGSVGElement> {
+  name: AmilaIconName;
 }
 
 function IconBase({ children, className, ...props }: SVGProps<SVGSVGElement>) {
@@ -70,7 +70,7 @@ function IconBase({ children, className, ...props }: SVGProps<SVGSVGElement>) {
   );
 }
 
-const ICONS: Record<AmaraIconName, ReactNode> = {
+const ICONS: Record<AmilaIconName, ReactNode> = {
   "disconnected-data": (
     <>
       <circle cx="6" cy="6" r="2.5" />
@@ -405,7 +405,7 @@ const ICONS: Record<AmaraIconName, ReactNode> = {
   ),
 };
 
-export function AmaraIcon({ name, className, ...props }: AmaraIconProps) {
+export function AmilaIcon({ name, className, ...props }: AmilaIconProps) {
   return (
     <IconBase className={className} {...props}>
       {ICONS[name]}
@@ -413,7 +413,7 @@ export function AmaraIcon({ name, className, ...props }: AmaraIconProps) {
   );
 }
 
-export const PROBLEM_ICONS: AmaraIconName[] = [
+export const PROBLEM_ICONS: AmilaIconName[] = [
   "disconnected-data",
   "profit-blind-spot",
   "retention-gap",
@@ -421,7 +421,7 @@ export const PROBLEM_ICONS: AmaraIconName[] = [
   "manual-reporting",
 ];
 
-export const SOLUTION_POINT_ICONS: AmaraIconName[] = [
+export const SOLUTION_POINT_ICONS: AmilaIconName[] = [
   "business-performance",
   "profit-leakage",
   "inventory-tracking",
@@ -431,21 +431,21 @@ export const SOLUTION_POINT_ICONS: AmaraIconName[] = [
   "growth-decisions",
 ];
 
-export const WORKFLOW_ICONS: AmaraIconName[] = [
+export const WORKFLOW_ICONS: AmilaIconName[] = [
   "collect-data",
   "analyze-patterns",
   "report-dashboard",
   "act-priority",
 ];
 
-export const SERVICE_ICON_NAMES: AmaraIconName[] = [
+export const SERVICE_ICON_NAMES: AmilaIconName[] = [
   "business-insights",
   "operational-clarity",
   "growth-insights",
   "ai-insights",
 ];
 
-export const WHO_WE_HELP_ICONS: Record<string, AmaraIconName> = {
+export const WHO_WE_HELP_ICONS: Record<string, AmilaIconName> = {
   "Aesthetic Clinics": "aesthetic-clinic",
   "Med Spas": "med-spa",
   "Private Medical Practices": "private-practice",
@@ -483,7 +483,7 @@ export const WHO_WE_HELP_ICONS: Record<string, AmaraIconName> = {
   "Health Tech & Digital Health Companies": "health-startup",
 };
 
-export const WHO_WE_SERVE_SIZE_ICONS: Record<string, AmaraIconName> = {
+export const WHO_WE_SERVE_SIZE_ICONS: Record<string, AmilaIconName> = {
   "Sole Practitioners & Solo Operators": "private-practice",
   "Small Teams & Boutique Practices": "wellness-clinic",
   "Growth-Stage Startups": "health-startup",

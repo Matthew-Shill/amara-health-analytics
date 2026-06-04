@@ -13,7 +13,7 @@ export function BrandMark() {
       />
       <div className="flex min-w-0 flex-col justify-center leading-none">
         <span className="font-headline text-[1.35rem] font-semibold tracking-[0.06em] text-smoked-teal sm:text-[1.65rem] md:text-[1.85rem]">
-          AMARA
+          AMILA
         </span>
         <span className="mt-1 font-body text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-smoked-teal sm:mt-1.5 sm:text-xs md:text-[0.8rem]">
           Health Analytics
