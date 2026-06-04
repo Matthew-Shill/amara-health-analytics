@@ -32,7 +32,7 @@ export function Header() {
           <div className="container-wide flex items-center justify-between gap-4 px-5 py-3.5 sm:px-8 sm:py-4 lg:px-12">
             <Link
               to="/"
-              className="relative z-50 shrink-0 transition-opacity hover:opacity-90"
+              className="relative z-50 min-w-0 flex-1 transition-opacity hover:opacity-90"
               aria-label={`${COMPANY_NAME} home`}
               onClick={closeMenu}
             >
@@ -61,7 +61,7 @@ export function Header() {
 
             <button
               type="button"
-              className="relative z-50 flex h-11 w-11 flex-col items-center justify-center gap-1.5 rounded-full border border-[color-mix(in_srgb,var(--amila-nude-stone)_50%,transparent)] bg-white/60 shadow-sm backdrop-blur lg:hidden"
+              className="relative z-50 flex h-11 w-11 shrink-0 flex-col items-center justify-center gap-1.5 rounded-full border border-[color-mix(in_srgb,var(--amila-nude-stone)_50%,transparent)] bg-white/60 shadow-sm backdrop-blur lg:hidden"
               aria-expanded={menuOpen}
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               onClick={() => setMenuOpen((o) => !o)}
