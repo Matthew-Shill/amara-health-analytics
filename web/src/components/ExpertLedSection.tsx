@@ -6,20 +6,20 @@ import { TeamProfileCard } from "@/components/TeamProfileCard";
 
 export function ExpertLedSection() {
   return (
-    <SectionBackdrop id="team" tone="warm">
+    <SectionBackdrop id="team" tone="dark">
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
         <Reveal className="lg:pr-4">
-          <p className="text-xs font-semibold uppercase tracking-[var(--amila-tracking-wide)] text-smoked-teal">
+          <p className="text-xs font-semibold uppercase tracking-[var(--amila-tracking-wide)] text-pink">
             Expert-led
           </p>
-          <h2 className="mt-5 font-headline text-3xl font-semibold leading-[1.12] heading-accent sm:text-4xl lg:text-[2.65rem]">
+          <h2 className="mt-5 font-headline text-3xl font-semibold leading-[1.12] text-cream sm:text-4xl lg:text-[2.65rem]">
             Human Expertise Behind Every Insight
           </h2>
           <span
             className="mt-5 block h-1 w-16 rounded-full bg-gradient-to-r from-pink via-blue to-transparent"
             aria-hidden
           />
-          <p className="mt-6 text-base leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_78%,white)] sm:text-lg">
+          <p className="mt-6 text-base leading-relaxed text-cream/85 sm:text-lg">
             Amila Health Analytics combines advanced quantitative analysis, thoughtful
             reporting, and healthcare-aware strategy to help clinics see what their current
             systems are not clearly showing.

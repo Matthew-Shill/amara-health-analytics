@@ -21,9 +21,10 @@ export function ProblemSection() {
   const hasMore = isMobile && visibleCount < PROBLEMS.length;
 
   return (
-    <SectionBackdropWide id="problem" tone="warm" motif>
+    <SectionBackdropWide id="problem" tone="dark" motif>
       <Reveal>
         <SectionHeading
+          light
           eyebrow="The challenge"
           title="Your business is generating data every day. Most of it is going unused."
           subtitle="Important decisions are often made with incomplete information. This leaves profit leakage, retention risk, and inventory waste hidden in disconnected systems."
@@ -67,7 +68,7 @@ export function ProblemSection() {
 
         {hasMore && (
           <div
-            className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[color-mix(in_srgb,var(--amila-pearl)_95%,white)] via-[color-mix(in_srgb,var(--amila-pearl)_70%,transparent)] to-transparent sm:hidden"
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-espresso-deep via-espresso-deep/70 to-transparent sm:hidden"
             aria-hidden
           />
         )}

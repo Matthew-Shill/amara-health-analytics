@@ -25,7 +25,7 @@ export function TeamProfileCard({ member, variant = "compact", wide = false }: T
 
   return (
     <article
-      className={`rounded-2xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-[color-mix(in_srgb,white_65%,var(--amila-pearl))] shadow-[0_12px_40px_-20px_rgba(125,87,73,0.1)] ${
+      className={`surface-card rounded-2xl ${
         isFull ? (wide ? "p-8 lg:p-12" : "p-8 lg:p-10") : "p-6"
       }`}
     >

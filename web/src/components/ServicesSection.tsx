@@ -14,9 +14,10 @@ const SERVICE_ACCENTS = [
 
 export function ServicesSection() {
   return (
-    <SectionBackdropWide id="services" tone="teal">
+    <SectionBackdropWide id="services" tone="blue-dark">
       <Reveal>
         <SectionHeading
+          light
           eyebrow="Capabilities"
           title="What We Do"
           subtitle="Along with our three pillars of clarity we incorporate thoughtful, AI-assisted insights that genuinely help executives act on what the data reveals."

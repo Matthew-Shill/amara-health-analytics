@@ -198,6 +198,50 @@ body {
   );
 }
 
+.section-tone-dark {
+  background: linear-gradient(
+    165deg,
+    var(--amila-espresso-deep) 0%,
+    var(--amila-espresso) 42%,
+    color-mix(in srgb, var(--amila-blue) 55%, var(--amila-espresso)) 100%
+  );
+  color: var(--amila-cream);
+}
+
+.section-tone-blue-dark {
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--amila-blue) 85%, var(--amila-espresso-deep)) 0%,
+    var(--amila-blue) 48%,
+    color-mix(in srgb, var(--amila-espresso) 30%, var(--amila-blue)) 100%
+  );
+  color: var(--amila-cream);
+}
+
+.section-tone-dark .ambient-mesh,
+.section-tone-blue-dark .ambient-mesh {
+  opacity: 0.5;
+  background-image:
+    radial-gradient(
+      circle at 15% 25%,
+      color-mix(in srgb, var(--amila-pink) 18%, transparent) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 85% 75%,
+      color-mix(in srgb, var(--amila-blue) 22%, transparent) 0%,
+      transparent 45%
+    );
+}
+
+.section-tone-dark .eyebrow-pill,
+.section-tone-blue-dark .eyebrow-pill {
+  background: rgb(255 255 255 / 0.1);
+  border-color: color-mix(in srgb, var(--amila-pink) 40%, transparent);
+  color: var(--amila-cream);
+  box-shadow: none;
+}
+
 .ambient-mesh {
   background-image:
     radial-gradient(
@@ -560,31 +604,48 @@ body {
 }
 
 .brand-full-logo--compact {
-  --brand-full-logo-height: 2.35rem;
-  --brand-full-logo-max-width: 10.5rem;
+  --brand-full-logo-height: 3.25rem;
+  --brand-full-logo-max-width: 20rem;
 }
 
 .brand-full-logo--comfortable {
-  --brand-full-logo-height: 2.5rem;
-  --brand-full-logo-max-width: 12rem;
+  --brand-full-logo-height: 3.75rem;
+  --brand-full-logo-max-width: 22rem;
 }
 
 @media (min-width: 640px) {
   .brand-full-logo--compact {
-    --brand-full-logo-height: 2.75rem;
-    --brand-full-logo-max-width: 12.5rem;
+    --brand-full-logo-height: 3.75rem;
+    --brand-full-logo-max-width: 24rem;
   }
 
   .brand-full-logo--comfortable {
-    --brand-full-logo-height: 3.25rem;
-    --brand-full-logo-max-width: 15rem;
+    --brand-full-logo-height: 4.5rem;
+    --brand-full-logo-max-width: 28rem;
   }
 }
 
 @media (min-width: 768px) {
+  .brand-full-logo--compact {
+    --brand-full-logo-height: 4rem;
+    --brand-full-logo-max-width: 26rem;
+  }
+
   .brand-full-logo--comfortable {
-    --brand-full-logo-height: 3.75rem;
-    --brand-full-logo-max-width: 17rem;
+    --brand-full-logo-height: 5rem;
+    --brand-full-logo-max-width: 32rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .brand-full-logo--compact {
+    --brand-full-logo-height: 4.25rem;
+    --brand-full-logo-max-width: 28rem;
+  }
+
+  .brand-full-logo--comfortable {
+    --brand-full-logo-height: 5.25rem;
+    --brand-full-logo-max-width: 34rem;
   }
 }
 

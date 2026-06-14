@@ -29,17 +29,17 @@ export function Header() {
               : "bg-cream/60 backdrop-blur-sm"
           }`}
         >
-          <div className="container-wide grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-5 py-3.5 sm:gap-4 sm:px-8 sm:py-4 lg:px-12">
+          <div className="container-wide flex items-center gap-4 px-5 py-3.5 sm:px-8 sm:py-4 lg:gap-8 lg:px-12">
             <Link
               to="/"
-              className="relative z-50 min-w-0 overflow-hidden transition-opacity hover:opacity-90"
+              className="relative z-50 shrink-0 transition-opacity hover:opacity-90"
               aria-label={`${COMPANY_NAME} home`}
               onClick={closeMenu}
             >
               <BrandMark layout="compact" />
             </Link>
 
-            <nav className="hidden items-center gap-9 lg:flex" aria-label="Primary">
+            <nav className="hidden flex-1 items-center justify-center gap-9 lg:flex" aria-label="Primary">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.href}
@@ -55,11 +55,12 @@ export function Header() {
               ))}
             </nav>
 
-            <div className="hidden lg:block">
-              <Button href="/#contact">Book a Consultation</Button>
-            </div>
+            <div className="ml-auto flex shrink-0 items-center gap-3">
+              <div className="hidden lg:block">
+                <Button href="/#contact">Book a Consultation</Button>
+              </div>
 
-            <button
+              <button
               type="button"
               className="relative z-50 flex h-11 w-11 shrink-0 flex-col items-center justify-center gap-1.5 rounded-full border border-[color-mix(in_srgb,var(--amila-nude-stone)_50%,transparent)] bg-white/60 shadow-sm backdrop-blur lg:hidden"
               aria-expanded={menuOpen}
@@ -76,6 +77,7 @@ export function Header() {
                 className={`h-0.5 w-5 rounded-full bg-espresso transition-transform ${menuOpen ? "-translate-y-2 -rotate-45" : ""}`}
               />
             </button>
+            </div>
           </div>
         </div>
       </header>

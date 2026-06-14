@@ -19,7 +19,7 @@ export function SectionHeading({
   light = false,
 }: SectionHeadingProps) {
   const alignClass = align === "center" ? "text-center mx-auto items-center" : "text-left items-start";
-  const titleClass = light ? "text-pearl" : "heading-accent";
+  const titleClass = light ? "text-cream" : "heading-accent";
   const subClass = light
     ? "text-cream/90"
     : "text-espresso/75";
