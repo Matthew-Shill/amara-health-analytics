@@ -75,7 +75,7 @@ function DemoShowcase() {
                 onClick={() => goTo(i)}
                 className={`shrink-0 rounded-full px-4 py-2 text-xs font-semibold transition-all sm:text-sm ${
                   selected
-                    ? "bg-smoked-teal text-pearl shadow-[0_8px_24px_-8px_rgba(67,105,106,0.55)]"
+                    ? "bg-smoked-teal text-pearl shadow-[0_8px_24px_-8px_rgba(62,83,118,0.55)]"
                     : "bg-white/70 text-espresso ring-1 ring-[color-mix(in_srgb,var(--amila-nude-stone)_40%,transparent)] hover:bg-white hover:text-smoked-teal"
                 }`}
               >
@@ -120,7 +120,7 @@ function DemoShowcase() {
         role="tabpanel"
         aria-labelledby={`demo-tab-${demo.id}`}
         data-case-study-slot={demo.id}
-        className="demo-panel-enter card-lift mt-6 overflow-hidden rounded-3xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_40%,transparent)] bg-white/80 shadow-[0_24px_60px_-28px_rgba(75,52,43,0.2)]"
+        className="demo-panel-enter card-lift mt-6 overflow-hidden rounded-3xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_40%,transparent)] bg-white/80 shadow-[0_24px_60px_-28px_rgba(125,87,73,0.2)]"
       >
         <div className="grid lg:grid-cols-[1.35fr_0.65fr] lg:items-stretch">
           <div className="border-b border-[color-mix(in_srgb,var(--amila-pearl)_60%,var(--amila-nude-stone))] bg-gradient-to-br from-[color-mix(in_srgb,var(--amila-pearl)_65%,white)] to-white p-5 sm:p-6 lg:border-b-0 lg:border-r lg:p-8">

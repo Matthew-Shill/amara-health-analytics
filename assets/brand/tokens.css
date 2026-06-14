@@ -5,15 +5,20 @@
 
 :root {
   /* Colors */
-  --amila-pearl: #f5f1eb;
-  --amila-nude-stone: #d8c0a8;
-  --amila-smoked-teal: #43696a;
-  --amila-espresso: #4b342b;
+  --amila-cream: #e8d5b1;
+  --amila-pink: #f7a1b7;
+  --amila-blue: #3e5376;
+  --amila-espresso: #7d5749;
+
+  /* Legacy aliases */
+  --amila-pearl: var(--amila-cream);
+  --amila-nude-stone: var(--amila-pink);
+  --amila-smoked-teal: var(--amila-blue);
 
   /* Semantic */
-  --amila-bg: var(--amila-pearl);
-  --amila-brand: var(--amila-nude-stone);
-  --amila-accent: var(--amila-smoked-teal);
+  --amila-bg: var(--amila-cream);
+  --amila-brand: var(--amila-pink);
+  --amila-accent: var(--amila-blue);
   --amila-text: var(--amila-espresso);
 
   /* Typography */

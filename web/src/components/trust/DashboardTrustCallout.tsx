@@ -4,7 +4,7 @@ import { AmilaIcon } from "@/components/ui/icons/AmilaIcon";
 export function DashboardTrustCallout() {
   return (
     <aside
-      className="rounded-2xl border border-[color-mix(in_srgb,var(--amila-smoked-teal)_22%,transparent)] bg-gradient-to-br from-[color-mix(in_srgb,var(--amila-smoked-teal)_10%,white)] to-white/80 p-5 shadow-[0_8px_24px_-12px_rgba(67,105,106,0.18)]"
+      className="rounded-2xl border border-[color-mix(in_srgb,var(--amila-smoked-teal)_22%,transparent)] bg-gradient-to-br from-[color-mix(in_srgb,var(--amila-smoked-teal)_10%,white)] to-white/80 p-5 shadow-[0_8px_24px_-12px_rgba(62,83,118,0.18)]"
       aria-label="Dashboard privacy and security features"
     >
       <div className="flex items-start gap-3">

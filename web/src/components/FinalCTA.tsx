@@ -20,7 +20,7 @@ export function FinalCTA() {
               className="pointer-events-none absolute inset-0 opacity-30"
               style={{
                 background:
-                  "radial-gradient(circle at 30% 20%, #D8C0A8 0%, transparent 40%), radial-gradient(circle at 70% 80%, #43696A 0%, transparent 50%)",
+                  "radial-gradient(circle at 30% 20%, #F7A1B7 0%, transparent 40%), radial-gradient(circle at 70% 80%, #3E5376 0%, transparent 50%)",
               }}
               aria-hidden
             />

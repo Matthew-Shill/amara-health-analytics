@@ -311,15 +311,15 @@ function ExecutiveFeatured({ insight, dashboardTitle }: { insight?: string; dash
             <svg viewBox="0 0 100 100" className="h-full w-full" preserveAspectRatio="none">
               <defs>
                 <linearGradient id="demoExecFill" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#43696A" stopOpacity="0.25" />
-                  <stop offset="100%" stopColor="#43696A" stopOpacity="0" />
+                  <stop offset="0%" stopColor="#3E5376" stopOpacity="0.25" />
+                  <stop offset="100%" stopColor="#3E5376" stopOpacity="0" />
                 </linearGradient>
               </defs>
               <path d={`${path} L 100 100 L 0 100 Z`} fill="url(#demoExecFill)" />
               <path
                 d={path}
                 fill="none"
-                stroke="#43696A"
+                stroke="#3E5376"
                 strokeWidth="2"
                 vectorEffect="non-scaling-stroke"
               />

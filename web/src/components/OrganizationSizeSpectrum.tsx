@@ -108,8 +108,8 @@ export function OrganizationSizeSpectrum() {
                   <span
                     className={`relative flex items-center justify-center rounded-full border-2 transition-all duration-500 ${
                       isActive
-                        ? "border-smoked-teal bg-gradient-to-br from-smoked-teal to-[color-mix(in_srgb,var(--amila-smoked-teal)_75%,var(--amila-espresso))] text-pearl shadow-[0_16px_40px_-8px_rgba(67,105,106,0.55)]"
-                        : "border-[color-mix(in_srgb,var(--amila-nude-stone)_55%,transparent)] bg-white/90 text-smoked-teal shadow-[0_8px_24px_-10px_rgba(75,52,43,0.18)] group-hover:border-smoked-teal/50 group-hover:shadow-[0_12px_32px_-8px_rgba(67,105,106,0.35)]"
+                        ? "border-smoked-teal bg-gradient-to-br from-smoked-teal to-[color-mix(in_srgb,var(--amila-smoked-teal)_75%,var(--amila-espresso))] text-pearl shadow-[0_16px_40px_-8px_rgba(62,83,118,0.55)]"
+                        : "border-[color-mix(in_srgb,var(--amila-nude-stone)_55%,transparent)] bg-white/90 text-smoked-teal shadow-[0_8px_24px_-10px_rgba(125,87,73,0.18)] group-hover:border-smoked-teal/50 group-hover:shadow-[0_12px_32px_-8px_rgba(62,83,118,0.35)]"
                     }`}
                     style={{ width: nodeSize, height: nodeSize }}
                   >

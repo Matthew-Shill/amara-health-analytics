@@ -101,7 +101,7 @@ export function PrivacySecurityPage() {
             <SectionHeading eyebrow="Overview" title="Our Commitment to Trust" align="left" />
           </Reveal>
           <Reveal delay={1}>
-            <div className="rounded-3xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/60 p-7 shadow-[0_20px_50px_-24px_rgba(75,52,43,0.12)] lg:p-9">
+            <div className="rounded-3xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/60 p-7 shadow-[0_20px_50px_-24px_rgba(125,87,73,0.12)] lg:p-9">
               <p className="text-base leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_80%,white)] sm:text-lg">
                 {OVERVIEW}
               </p>
@@ -232,7 +232,7 @@ export function PrivacySecurityPage() {
                   className="pointer-events-none absolute inset-0 opacity-30"
                   style={{
                     background:
-                      "radial-gradient(circle at 30% 20%, #D8C0A8 0%, transparent 40%), radial-gradient(circle at 70% 80%, #43696A 0%, transparent 50%)",
+                      "radial-gradient(circle at 30% 20%, #F7A1B7 0%, transparent 40%), radial-gradient(circle at 70% 80%, #3E5376 0%, transparent 50%)",
                   }}
                   aria-hidden
                 />

@@ -94,7 +94,7 @@ export function PrivacySecuritySection() {
           className="mt-16 sm:mt-16"
           contentClassName="mt-4"
         >
-          <div className="rounded-3xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_40%,transparent)] bg-white/60 p-7 shadow-[0_20px_50px_-24px_rgba(75,52,43,0.12)] sm:p-9 lg:p-10">
+          <div className="rounded-3xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_40%,transparent)] bg-white/60 p-7 shadow-[0_20px_50px_-24px_rgba(125,87,73,0.12)] sm:p-9 lg:p-10">
             <p className="text-xs font-semibold uppercase tracking-[var(--amila-tracking-wide)] text-smoked-teal">
               Training & experience
             </p>

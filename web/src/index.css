@@ -1,13 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --amila-pearl: #f5f1eb;
-  --amila-nude-stone: #d8c0a8;
-  --amila-smoked-teal: #43696a;
-  --amila-espresso: #4b342b;
-  --amila-bg: var(--amila-pearl);
-  --amila-brand: var(--amila-nude-stone);
-  --amila-accent: var(--amila-smoked-teal);
+  --amila-cream: #e8d5b1;
+  --amila-pink: #f7a1b7;
+  --amila-blue: #3e5376;
+  --amila-espresso: #7d5749;
+  --amila-pearl: var(--amila-cream);
+  --amila-nude-stone: var(--amila-pink);
+  --amila-smoked-teal: var(--amila-blue);
+  --amila-bg: var(--amila-cream);
+  --amila-brand: var(--amila-pink);
+  --amila-accent: var(--amila-blue);
   --amila-text: var(--amila-espresso);
   --amila-font-headline: "Playfair Display", Georgia, serif;
   --amila-font-body: "Montserrat", system-ui, sans-serif;
@@ -96,10 +99,13 @@
 }
 
 @theme {
-  --color-pearl: var(--amila-pearl);
-  --color-nude-stone: var(--amila-nude-stone);
-  --color-smoked-teal: var(--amila-smoked-teal);
+  --color-cream: var(--amila-cream);
+  --color-pink: var(--amila-pink);
+  --color-blue: var(--amila-blue);
   --color-espresso: var(--amila-espresso);
+  --color-pearl: var(--amila-cream);
+  --color-nude-stone: var(--amila-pink);
+  --color-smoked-teal: var(--amila-blue);
   --font-headline: var(--amila-font-headline);
   --font-body: var(--amila-font-body);
   --font-slogan: var(--amila-font-slogan);
@@ -235,12 +241,14 @@ body {
   animation: float-orb 14s ease-in-out infinite;
 }
 
+.orb-blue,
 .orb-teal {
-  background: color-mix(in srgb, var(--amila-smoked-teal) 35%, transparent);
+  background: color-mix(in srgb, var(--amila-blue) 35%, transparent);
 }
 
+.orb-pink,
 .orb-stone {
-  background: color-mix(in srgb, var(--amila-nude-stone) 50%, transparent);
+  background: color-mix(in srgb, var(--amila-pink) 50%, transparent);
 }
 
 @keyframes float-orb {

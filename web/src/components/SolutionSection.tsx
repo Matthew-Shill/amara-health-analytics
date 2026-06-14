@@ -78,7 +78,7 @@ export function SolutionSection() {
               {SOLUTION_POINTS.map((point, i) => (
                 <li
                   key={point}
-                  className="card-lift flex items-start gap-4 rounded-2xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/60 px-5 py-4 shadow-[0_8px_30px_-16px_rgba(75,52,43,0.1)] transition-colors hover:border-smoked-teal/50 hover:bg-white/90"
+                  className="card-lift flex items-start gap-4 rounded-2xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/60 px-5 py-4 shadow-[0_8px_30px_-16px_rgba(125,87,73,0.1)] transition-colors hover:border-smoked-teal/50 hover:bg-white/90"
                 >
                   <span
                     className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-smoked-teal to-[color-mix(in_srgb,var(--amila-smoked-teal)_70%,var(--amila-espresso))] shadow-md"

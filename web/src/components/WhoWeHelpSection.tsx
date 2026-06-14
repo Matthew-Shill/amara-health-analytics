@@ -71,7 +71,7 @@ export function WhoWeHelpSection() {
         <div id="who-we-help-grid" className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
           {visibleItems.map((card, i) => (
             <Reveal key={card.title} delay={(i % 4) as 0 | 1 | 2 | 3}>
-              <article className="card-lift card-accent group h-full rounded-2xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/75 p-6 shadow-[0_12px_40px_-18px_rgba(75,52,43,0.12)] lg:p-7">
+              <article className="card-lift card-accent group h-full rounded-2xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/75 p-6 shadow-[0_12px_40px_-18px_rgba(125,87,73,0.12)] lg:p-7">
                 <div className="mb-4 flex items-center gap-3 rounded-xl bg-gradient-to-br from-[color-mix(in_srgb,var(--amila-smoked-teal)_15%,white)] to-transparent px-3 py-2">
                   <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/70 ring-1 ring-[color-mix(in_srgb,var(--amila-smoked-teal)_15%,transparent)]">
                     <AmilaIcon

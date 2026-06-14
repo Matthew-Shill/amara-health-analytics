@@ -16,7 +16,7 @@ export function AboutSection() {
 
       <div className="grid gap-10 lg:grid-cols-5 lg:gap-14">
         <Reveal delay={1} className="lg:col-span-3">
-          <div className="rounded-3xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/60 p-7 shadow-[0_20px_50px_-24px_rgba(75,52,43,0.12)] lg:p-9">
+          <div className="rounded-3xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/60 p-7 shadow-[0_20px_50px_-24px_rgba(125,87,73,0.12)] lg:p-9">
             <p className="text-base leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_80%,white)] sm:text-lg">
               Amila Health Analytics combines analytics, business intelligence,
               healthcare-aware strategy, digital systems, and thoughtful design to help

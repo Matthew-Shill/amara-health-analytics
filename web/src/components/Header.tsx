@@ -25,7 +25,7 @@ export function Header() {
         <div
           className={`transition-all duration-500 ${
             scrolled
-              ? "border-b border-[color-mix(in_srgb,var(--amila-nude-stone)_45%,transparent)] bg-[color-mix(in_srgb,var(--amila-pearl)_90%,white)] shadow-[0_12px_40px_-16px_rgba(75,52,43,0.12)] backdrop-blur-xl"
+              ? "border-b border-[color-mix(in_srgb,var(--amila-nude-stone)_45%,transparent)] bg-[color-mix(in_srgb,var(--amila-pearl)_90%,white)] shadow-[0_12px_40px_-16px_rgba(125,87,73,0.12)] backdrop-blur-xl"
               : "bg-[color-mix(in_srgb,var(--amila-pearl)_40%,transparent)] backdrop-blur-sm"
           }`}
         >

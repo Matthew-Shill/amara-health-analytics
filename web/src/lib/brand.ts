@@ -6,20 +6,21 @@ export const MISSION = "Don't be the business with wasted data.";
 export const LOGO = {
   fullStone: "/logos/full/Stone Full Logo.svg",
   fullStonePng: "/logos/full/Stone Full Logo.png",
-  fullStoneTransparent: "/logos/full/Stone Full Logo Transparent.png",
-  fullTeal: "/logos/full/Teal Full Logo.svg",
-  fullTealPng: "/logos/full/Teal Full Logo.png",
-  fullTealTransparent: "/logos/full/Teal Full Logo Transparent.png",
+  fullBlue: "/logos/full/Blue Full Logo.svg",
+  fullBluePng: "/logos/full/Blue Full Logo.png",
+  fullPink: "/logos/full/Pink Full Logo.svg",
+  fullPinkPng: "/logos/full/Pink Full Logo.png",
   fullEspresso: "/logos/full/Espesso Full Logo.svg",
   fullEspressoPng: "/logos/full/Espesso Full Logo.png",
-  fullEspressoTransparent: "/logos/full/Espesso Full Logo Transparent.png",
-  iconStone: "/logos/icon/AHA Icon Stone.svg",
-  iconTeal: "/logos/icon/AHA Icon Teal.svg",
-  iconEspresso: "/logos/icon/AHA Icon Espresso.svg",
+  iconStone: "/logos/icon/Stone Icon.svg",
+  iconBlue: "/logos/icon/Blue Icon.svg",
+  iconPink: "/logos/icon/Pink Icon.svg",
+  iconEspresso: "/logos/icon/Espresso Icon.svg",
   /** PNG icons — preferred for in-app UI; SVGs embed rasters that break on mobile Safari. */
-  iconStonePng: "/logos/icon/AHA Icon Stone.png",
-  iconTealPng: "/logos/icon/AHA Icon Teal.png",
-  iconEspressoPng: "/logos/icon/AHA Icon Espresso.png",
+  iconStonePng: "/logos/icon/Stone Icon.png",
+  iconBluePng: "/logos/icon/Blue Icon.png",
+  iconPinkPng: "/logos/icon/Pink Icon.png",
+  iconEspressoPng: "/logos/icon/Espresso Icon.png",
 } as const;
 
 export const NAV_LINKS = [

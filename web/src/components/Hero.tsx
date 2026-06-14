@@ -11,12 +11,12 @@ export function Hero() {
     <section className="relative overflow-hidden pt-28 sm:pt-32 lg:pt-36">
       <div className="hero-mesh absolute inset-0" aria-hidden />
       <div
-        className="orb orb-stone left-[5%] top-[20%] h-48 w-48 sm:h-64 sm:w-64"
+        className="orb orb-pink left-[5%] top-[20%] h-48 w-48 sm:h-64 sm:w-64"
         style={{ animationDelay: "0s" }}
         aria-hidden
       />
       <div
-        className="orb orb-teal right-[10%] top-[10%] h-56 w-56 sm:h-72 sm:w-72"
+        className="orb orb-blue right-[10%] top-[10%] h-56 w-56 sm:h-72 sm:w-72"
         style={{ animationDelay: "-4s" }}
         aria-hidden
       />

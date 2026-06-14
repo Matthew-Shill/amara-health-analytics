@@ -26,7 +26,7 @@ export function ServicesSection() {
       <div className="grid gap-6 md:grid-cols-2">
         {SERVICES.map((service, i) => (
           <Reveal key={service.title} delay={(i % 4) as 0 | 1 | 2 | 3}>
-            <article className="card-lift card-accent group relative h-full overflow-hidden rounded-3xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_40%,transparent)] bg-white/70 p-7 shadow-[0_16px_48px_-20px_rgba(75,52,43,0.15)] lg:p-8">
+            <article className="card-lift card-accent group relative h-full overflow-hidden rounded-3xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_40%,transparent)] bg-white/70 p-7 shadow-[0_16px_48px_-20px_rgba(125,87,73,0.15)] lg:p-8">
               <div
                 className={`pointer-events-none absolute -right-8 -top-8 h-32 w-32 rounded-full bg-gradient-to-br ${SERVICE_ACCENTS[i]} opacity-80 blur-2xl transition-transform duration-500 group-hover:scale-125`}
                 aria-hidden

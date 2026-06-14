@@ -84,7 +84,7 @@ export function AboutPage() {
             />
           </Reveal>
           <Reveal delay={1}>
-            <div className="rounded-3xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/60 p-7 shadow-[0_20px_50px_-24px_rgba(75,52,43,0.12)] lg:p-9">
+            <div className="rounded-3xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/60 p-7 shadow-[0_20px_50px_-24px_rgba(125,87,73,0.12)] lg:p-9">
               <p className="text-base leading-relaxed text-[color-mix(in_srgb,var(--amila-espresso)_80%,white)] sm:text-lg">
                 Most clinics already have the data they need. It is often hidden inside booking
                 platforms, treatment records, spreadsheets, payment systems, and disconnected
@@ -107,7 +107,7 @@ export function AboutPage() {
           <div className="grid gap-5 md:grid-cols-3">
             {ABOUT_APPROACH_CARDS.map((card, i) => (
               <Reveal key={card.title} delay={(i % 4) as 0 | 1 | 2 | 3}>
-                <article className="card-lift h-full rounded-2xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/70 p-6 shadow-[0_12px_40px_-18px_rgba(75,52,43,0.1)] lg:p-7">
+                <article className="card-lift h-full rounded-2xl border border-[color-mix(in_srgb,var(--amila-nude-stone)_35%,transparent)] bg-white/70 p-6 shadow-[0_12px_40px_-18px_rgba(125,87,73,0.1)] lg:p-7">
                   <h3 className="font-headline text-xl font-semibold text-espresso">
                     {card.title}
                   </h3>
@@ -171,7 +171,7 @@ export function AboutPage() {
                   className="pointer-events-none absolute inset-0 opacity-30"
                   style={{
                     background:
-                      "radial-gradient(circle at 30% 20%, #D8C0A8 0%, transparent 40%), radial-gradient(circle at 70% 80%, #43696A 0%, transparent 50%)",
+                      "radial-gradient(circle at 30% 20%, #F7A1B7 0%, transparent 40%), radial-gradient(circle at 70% 80%, #3E5376 0%, transparent 50%)",
                   }}
                   aria-hidden
                 />

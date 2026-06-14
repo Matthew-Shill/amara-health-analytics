@@ -3,12 +3,13 @@ import { LOGO } from "@/lib/brand";
 
 /**
  * Full wordmark logos for header, footer, and other branded surfaces.
- * PNG transparent variants avoid SVG-embedded raster issues on mobile Safari.
+ * PNG variants avoid SVG-embedded raster issues on mobile Safari.
  */
 export const BRAND_FULL_LOGO_WEB = {
-  stone: LOGO.fullStoneTransparent,
-  teal: LOGO.fullTealTransparent,
-  espresso: LOGO.fullEspressoTransparent,
+  stone: LOGO.fullStonePng,
+  blue: LOGO.fullBluePng,
+  pink: LOGO.fullPinkPng,
+  espresso: LOGO.fullEspressoPng,
 } as const;
 
 /**
@@ -16,8 +17,9 @@ export const BRAND_FULL_LOGO_WEB = {
  * poorly on mobile Safari when flex layout applies `max-width: 100%`.
  */
 export const BRAND_ICON_WEB = {
-  teal: LOGO.iconTealPng,
   stone: LOGO.iconStonePng,
+  blue: LOGO.iconBluePng,
+  pink: LOGO.iconPinkPng,
   espresso: LOGO.iconEspressoPng,
 } as const;
 
